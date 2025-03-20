@@ -143,7 +143,7 @@ controls.maxDistance = 100;
 
 // Load the 3D Model
 const loader = new GLTFLoader();
-const modelPath = "/3D MODEL/scene.gltf";
+const modelPath = "./planets/3d solar system/3D MODEL/scene.gltf";
 
 let object;
 loader.load(
