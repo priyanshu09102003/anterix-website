@@ -1,0 +1,1077 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Rocket Fundamentals</title>
+  <meta name="title" content="Cryptoza - Trusted & Secure Trading Crypto Wallet">
+  <meta name="description" content="This is a cryptocurrency wallet html template made by codewithsadee.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/anterix_White-removebg-preview.svg" width="185" height="31" alt="Anterix">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/anterix_White-removebg-preview.svg" width="185" height="31" alt="Anterix">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#force_on_rocket" class="navbar-link">Forces Acting</a>
+          </li>
+
+          <li>
+            <a href="#rocket_motion" class="navbar-link">Basic Rocket Motion</a>
+          </li>
+
+          <li>
+            <a href="#rocket_rotations" class="navbar-link">Rocket Rotations</a>
+          </li>
+
+          <li>
+            <a href="#rocket_stability" class="navbar-link">Rocket Stability</a>
+          </li>
+
+          <li>
+            <a href="#rocket_control" class="navbar-link">Rocket Control</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" aria-label="home">
+        <div class="container">
+
+            <div class="hero-content">
+                <h1 class="h1 hero-title">Rocket Fundamentals</h1>
+                <p class="hero-text">
+                    Rockets are fascinating engineering marvels that operate on the principles of physics, propulsion, and aerodynamics. Understanding the fundamentals of rocketry helps us explore space, launch satellites, and even design model rockets.
+                </p>
+
+                <div class="btn-group">
+                    <a href="#" class="hero-play-btn" onclick="heroOpenVideo()">
+                        <div class="hero-icon">
+                            <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
+                        </div>
+                        <span class="hero-span">Rocket Engineering</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-banner">
+                <figure class="hero-banner">
+                    <img src="./assets/images/hero-banner.gif" width="600" height="700" alt="hero banner" class="w-100" style="border-radius: 20px;">
+                </figure>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Video Overlay -->
+    <div id="hero-videoOverlay" class="hero-video-overlay">
+        <div class="hero-video-container">
+            <span class="hero-close-btn" onclick="heroCloseVideo()">&times;</span>
+            <iframe 
+                id="hero-videoPlayer" 
+                src="https://www.youtube.com/embed/UcBc0l7IrZU?enablejsapi=1" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+      <!-- 
+        - #FORCES ACTING
+      -->
+
+
+      <section class="stats" aria-label="statistics" id="force_on_rocket" style="margin-top: 40px;">
+        <div class="container">
+
+          <div class="stats-content">
+
+            <h2 class="h2 section-title">Forces on a Rocket</h2>
+
+            <p class="section-text">
+                Forces are vector quantities having both a magnitude and a direction. When describing the action of forces, one must account for both the magnitude and the direction. In flight, a rocket is subjected to four forces; weight, thrust, and the aerodynamic forces, lift and drag.
+            </p>
+            <br>
+            <p class="section-text">
+                The magnitude of the weight depends on the mass of all of the parts of the rocket. The weight force is always directed towards the center of the earth and acts through the center of gravity, the yellow dot on the figure.
+            </p>
+
+            <p class="section-text">
+               The magnitude of the thrust depends on the mass flow rate through the engine and the velocity and pressure at the exit of the nozzle. 
+            </p>
+            <br>
+            <p class="section-text">
+                The thrust force normally acts along the longitudinal axis of the rocket and therefore acts through the center of gravity.
+                Some full scale rockets can move, or gimbal, their nozzles to produce a force which is not aligned with the center of gravity. The resulting torque about the center of gravity can be used to maneuver the rocket.
+             </p>
+            <p class="section-text">
+                The magnitude of the aerodynamic forces depends on the shape, size, and velocity of the rocket and on properties of the atmosphere. The aerodynamic forces act through the center of pressure, the black and yellow dot on the figure. Aerodynamic forces are very important for model rockets but may not be as important for full scale rockets, depending on the mission of the rocket.
+             </p>
+
+            <ul class="stats-list">
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Lift</h3>
+
+                  <p class="card-text">
+                    Stabilizes rocket flight.
+                  </p>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Weight</h3>
+
+                  <p class="card-text">
+                    Pulls rocket downward.
+                  </p>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Drag</h3>
+
+                  <p class="card-text">
+                    Resists rocket motion.
+                  </p>
+
+                </div>
+              </li>
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Thrust</h3>
+
+                  <p class="card-text">
+                    Pushes rocket upward.
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="stats-banner">
+            <img src="./assets/images/Forces on rocket.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #ROCKET MOTION
+      -->
+
+      <section class="app" aria-label="app" id="rocket_motion" style="margin-top: 50px;">
+        <div class="container">
+    
+            <div class="app-card bg-gray">
+    
+                <div class="card-content">
+    
+                    <h2 class="h2 section-title">Basic Rocket Motion</h2>
+    
+                    <h3>Dimensions</h3>
+    
+                    <p class="section-text">
+                        We live in a world that is defined by three spatial dimensions and one time dimension. Objects move within this domain in two ways. An object translates, or changes location, from one point to another. And an object rotates, or changes its attitude. In general, the motion of any object involves both translation and rotation. The translations are in direct response to external forces. The rotations are in direct response to external torques or moments (twisting forces).
+                    </p>
+    
+                    <br>
+    
+                    <h3>Rotation and Translation of Rockets</h3>
+    
+                    <p class="section-text">
+                        The motion of a rocket is particularly complex because the rotations and translations are coupled together; a rotation affects the magnitude and direction of the forces which affect translations. To understand and describe the motion of a rocket, we usually try to break down the complex problem into a series of easier problems. We can, for instance, assume that the rocket translates from one point to another as if all the mass of the rocket were collected into a single point called the center of gravity. We can describe the motion of the center of gravity by using Newton’s laws of motion. In general, there are four forces acting on the rocket; the weight, thrust, drag and lift.
+                    </p>
+    
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary" id="playVideo">
+                            <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
+                            <div>
+                                <p class="btn-text">SpaceX Falcon 9 Rocket</p>
+                                <p class="btn-title">Takeoff & Landing</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="video-overlay" id="videoOverlay">
+                        <div class="video-container">
+                            <button class="closebtnvideo" id="closeBtn">&times;</button>
+                            <video id="videoPlayer" controls>
+                                <source src="./assets/images/Starlink.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <figure class="card-banner">
+                    <img src="./assets/images/Basic-rocket-motion.png" width="383" height="384" loading="lazy"
+                        alt="motion" class="w-100" style="border-radius: 20px;">
+                </figure>
+    
+            </div>
+    
+        </div>
+    </section>
+    
+
+
+      <!-- ROCKET ROTATIONS -->
+
+      <section class="section promo" aria-label="promo" id="rocket_rotations">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">ROCKET ROTATIONS</h2>
+
+          <section class="stats" aria-label="statistics" id="force_on_rocket" style="margin-top: 40px;">
+            <div class="container">
+    
+              <div class="stats-content">
+    
+                <h3>Controlling the Attitude</h3>
+    
+                <p class="section-text">
+                    Since we live in a three-dimensional world, it is necessary to control the attitude or orientation of a flying rocket in all three dimensions. In flight, any rocket will rotate about its center of gravity, a point which is the average location of the mass of the rocket. We can define a three-dimensional coordinate system through the center of gravity with each axis of this coordinate system perpendicular to the other two axes. We can then define the orientation, or attitude of the rocket by the amount of rotation of the parts of the rocket along these principal axes.
+                </p>
+
+                <h3>Axis</h3>
+    
+                <p class="section-text">
+                    Most rockets are symmetric about a line from the tip of the nose to the center of the nozzle exit. We will call this line the roll axis and motion about this axis is called a rolling motion. Because the rocket is symmetric about the roll axis, engineers call this configuration axisymmetric. The center of gravity lies along the roll axis.
+                </p>
+
+                <h3>Maneuvering a Rocket</h3>
+    
+                <p class="section-text">
+                    A rocket can be maneuvered in several different ways. In flight, the fins of the rocket produce aerodynamic forces. These forces are applied at the center of pressure of the rocket which is some distance from the rocket cg and produce torques (or moments) about the principal axes. The torques cause the rocket to rotate. Most full-scale rockets produce pitch or yaw motions by gimballing, or rotating, the exhaust nozzle. If the thrust vector is not aligned with the roll axis, it produces a torque about the center of gravity.
+                </p>
+    
+              </div>
+    
+              <figure class="stats-banner">
+                <img src="./assets/images/rocket-rotation.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+              </figure>
+    
+            </div>
+          </section>
+
+          <p class="section-text text-center" style="margin-top: 20px;">
+            A rocket's motion is influenced by two fundamental types of rotational movements, which are as follows:
+          </p>
+
+
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="promo-card bg-gray">
+
+                <div class="card-icon">
+                  <ion-icon name="refresh-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Rocket Roll Motion</h3>
+
+                <p class="card-text">
+                    A roll motion is a circular movement of the fins of the rocket.
+                    The rolling motion can be caused by the deflection of the fins of the rocket. The fins can be hinged like the rear section of an airplane wing. 
+                </p>
+
+                <a href="./assets/images/roll-motion.gif" class="btn-link">
+                  <span class="span">View</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="promo-card bg-gray">
+
+                <div class="card-icon">
+                  <ion-icon name="swap-vertical-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Pitch Motion </h3>
+
+                <p class="card-text">
+                    A pitch motion is an up or down movement of the nose of the rocket.
+                    The pitching motion is being caused by the deflection of the nozzle of the rocket.
+                    Such a rotation of the nozzle is called gimballing the nozzle.
+                </p>
+
+                <a href="./assets/images/pitch-motion.gif" class="btn-link">
+                  <span class="span">View</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="gif-overlay" id="gifOverlay">
+            <div class="gif-container">
+                <button class="closeGifBtn" id="closeGifBtn">&times;</button>
+                <img id="gifImage" src="" alt="GIF Preview">
+            </div>
+        </div>
+        
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="section market" aria-label="crypto market live price">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center"> Recent Space Missions</h2>
+
+          <p class="section-text text-center">
+            Stay updated with the latest space missions from top space agencies worldwide. From 2020 onward, explore the groundbreaking launches that are pushing the boundaries of space exploration and innovation.
+          </p>
+
+          <div class="table-container">
+            <table class="market-table">
+
+              <thead class="table-head">
+                <tr class="table-row">
+
+                  <th class="table-heading">Space Agency</th>
+
+                  <th class="table-heading">2020</th>
+
+                  <th class="table-heading">2021</th>
+
+                  <th class="table-heading">2022</th>
+
+                  <th class="table-heading">2023</th>
+
+                  <th class="table-heading">2024</th>
+
+                  <th class="table-heading">2025</th>
+
+                </tr>
+              </thead>
+
+              <tbody class="table-body">
+
+                <tr class="table-row">
+
+                  <td class="table-data wrapper">
+                    <img src="./assets/images/NASA-Photoroom.png" width="120" height="120" loading="lazy" alt="NASA">
+
+                    <div>
+                      <h3 class="h3 coin-name">NASA</h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <data class="data" value="39000">Artemis I</data>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-0.04%">Perseverance Rover</data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-3.26%">Artemis II</data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-7.82%">Artemis III</data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-7.82%">Europa Clipper</data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-7.82%">Lunar Gateway</data>
+                    </div>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data wrapper">
+                    <img src="./assets/images/SPACEX.png" width="150" height="150" loading="lazy" alt="SPACEX">
+
+                    <div>
+                      <h3 class="h3 coin-name">SpaceX</h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <data class="data" value="2896">Crew Dragon Demo-2</data>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-0.6%">Inspiration4</data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-4.73%">Starship SN15</data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-8.89%">Starship Orbital</data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-8.89%">Falcon Heavy</data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-8.89%">Starship Cargo</data>
+                    </div>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data wrapper">
+                    <img src="./assets/images/Roscosmos-Photoroom.png" width="120" height="120" loading="lazy" alt="RSCS">
+
+                    <div>
+                      <h3 class="h3 coin-name">Roscosmos</h3>
+
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <data class="data" value="1">Soyuz MS-16</data>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-0.01%">Nauka Module</data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-0.05%">Luna 25</data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-0.04%">Soyuz MS-22</data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-0.04%">Progress MS-26</data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-0.04%">Oryol</data>
+                    </div>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data wrapper">
+                    <img src="./assets/images/ESA-Photoroom.png" width="120" height="120" loading="lazy" alt="ESA">
+
+                    <div>
+                      <h3 class="h3 coin-name">ESA</h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <data class="data" value="398">Solar Orbiter</data>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-0.27%">Vega-C Maiden Flight</data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-3.92%">JUICE</data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-4.57%">Ariane 6 </data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-4.57%">ExoMars Rover</data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-4.57%">Space Rider</data>
+                    </div>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data wrapper">
+                    <img src="./assets/images/ISRO-Photoroom.png" width="120" height="120" loading="lazy" alt="ISRO">
+
+                    <div>
+                      <h3 class="h3 coin-name">ISRO</h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <data class="data" value="0">PSLV-C51</data>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-0.04%">Gaganyaan Test Flight</data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-0.13%">Chandrayaan-3</data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon green">
+                        <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="0.05%">SSLV-D2</data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon green">
+                        <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="0.05%">NISAR</data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon green">
+                        <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="0.05%">Gaganyaan</data>
+                    </div>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data wrapper">
+                    <img src="./assets/images/CNSA-Photoroom.png" width="120" height="120" loading="lazy" alt="CNSA">
+
+                    <div>
+                      <h3 class="h3 coin-name">CNSA</h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <data class="data" value="0">Tianwen-1</data>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-0.3%">Shenzhou-12 </data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-5.71%">Tiangong Station</data>
+                    </div>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-1.18%">Chang'e 6</data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-1.18%">Tianhe-2</data>
+                    </div>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper-flex">
+                      <div class="icon red">
+                        <ion-icon name="caret-down" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <data class="data" value="-1.18%">Xuntian Telescope</data>
+                    </div>
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #ROCKET STABILITY
+      -->
+
+      <section class="section instruction" aria-label="instruction" id="rocket_stability">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Rocket Stability</h2>
+        
+          <div class="stability" style="margin-bottom: 30px;">
+            <p class="section-text">
+                During the flight of a model rocket, small gusts of wind or thrust instabilities can cause the rocket to “wobble” or change its attitude in flight. Like any object in flight, a model rocket rotates about its center of gravity (CG), shown as a yellow dot in the figure. The rotation causes the axis of the rocket to be inclined at some angle (α) to the flight path.
+        
+                Whenever the rocket is inclined to the flight path, a lift force is generated by the rocket body and fins, while the aerodynamic drag remains fairly constant for small inclinations. Lift and drag both act through the center of pressure (CP) of the rocket, shown as the black and yellow dot in the figure.
+            </p>
+            <img src="./assets/images/rocket-stability.png" alt="Rocket Stability Diagram" class="stability-image" style="border-radius: 20px;">
+        </div>
+        
+        
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                  <img src="./assets/images/instruction-icon-1.svg" width="20" height="20" loading="lazy" alt="icon">
+                </div>
+                <h3 class="h3 card-title">Restoring Force</h3>
+                <p class="card-text">
+                    If the center of gravity is located above the center of pressure, the rocket will return to its initial flight conditions if it is disturbed. Engineers call this a restoring force because the forces “restore” the vehicle to its initial condition and the rocket is said to be stable.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                  <img src="./assets/images/instruction-icon-2.svg" width="20" height="20" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="h3 card-title">De-Stabilizing Force</h3>
+                <p class="card-text">
+                    If the center of pressure is above the center of gravity, the lift and drag forces maintain their directions but the direction of the torque generated by the forces is reversed. This is called a de-stabilizing force.
+                </p>
+                <p class="card-text">
+                    For a stable model rocket, the center of pressure must be located below the center of gravity. 
+                </p>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- ROCKET CONTROL -->
+
+      <section class="section instruction" aria-label="instruction" id="rocket_control">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Rocket Control</h2>
+        
+          <div class="stability" style="margin-bottom: 30px;">
+            <p class="section-text">
+                There are four major components to any full scale rocket; structural system or frame, the payload system, the guidance system, and the propulsion system. The guidance system of a rocket includes very sophisticated sensors, on-board computers, radars, and communication equipment.
+            </p>
+            <img src="./assets/images/Rocket_control.png" alt="Rocket Stability Diagram" class="stability-image" style="border-radius: 20px;">
+        </div>
+        
+        
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                  <img src="./assets/images/instruction-icon-1.svg" width="20" height="20" loading="lazy" alt="icon">
+                </div>
+                <h3 class="h3 card-title">Movable Fins</h3>
+                <p class="card-text">
+                    Movable fins help stabilize and control the rocket’s flight by adjusting their angle in response to changes in airflow. When the rocket experiences disturbances, these fins generate corrective forces that push it back onto the intended trajectory. This method is highly effective in atmospheric flight, where aerodynamic forces play a crucial role in maintaining stability and direction.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                  <img src="./assets/images/instruction-icon-2.svg" width="20" height="20" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="h3 card-title">Gimbaled Thrust</h3>
+                <p class="card-text">
+                    Gimbaled thrust involves mounting the rocket engine on a pivot, allowing the nozzle to swivel and change the direction of the exhaust. By adjusting the angle of thrust, the rocket can steer itself without relying on external aerodynamic surfaces. This technique is widely used in modern rockets for enhanced maneuverability, making it an essential feature in spaceflight and atmospheric launch control.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+                <div class="instruction-card bg-gray">
+  
+                  <div class="card-icon">
+                    <img src="./assets/images/instruction-icon-1.svg" width="20" height="20" loading="lazy" alt="icon">
+                  </div>
+                  <h3 class="h3 card-title">Vernier Rocket</h3>
+                  <p class="card-text">
+                    Vernier rockets are small auxiliary thrusters that provide precise control over the rocket’s orientation and trajectory. These engines fire in short bursts to make fine adjustments, particularly when major propulsion systems are inactive. They are commonly used in spacecraft and upper rocket stages to ensure accurate positioning, making them essential for orbital corrections and docking maneuvers.
+                  </p>
+  
+                </div>
+            </li>
+
+            <li>
+                <div class="instruction-card bg-gray">
+  
+                  <div class="card-icon">
+                    <img src="./assets/images/instruction-icon-2.svg" width="20" height="20" loading="lazy" alt="icon">
+                  </div>
+  
+                  <h3 class="h3 card-title">Thrust Vane</h3>
+                  <p class="card-text">
+                    Thrust vanes are control surfaces placed inside the rocket’s exhaust stream to redirect the flow of hot gases, generating forces that steer the vehicle. This method is particularly useful during early launch stages when aerodynamic surfaces like fins are less effective. Thrust vanes allow for precise control without requiring complex moving parts, making them a reliable option for stabilizing rockets in the initial phases of flight.
+                  </p>
+  
+                </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/ROCKETRY-Photoroom.svg" width="200" height="31" alt="Rocketry">
+          </a>
+
+          <p class="footer-text">
+            Simplifying rocketry, igniting curiosity, and making space science exciting.
+          </p>
+
+        </div>
+
+        <br>
+        <br>
+        <h3>Navigate through Rocketry</h3>
+        <ul class="footer-list">
+
+          <li>
+            <a href="./Compressed_air_rockets.html" class="footer-link">Compressed Air Rockets</a>
+          </li>
+
+          <li>
+            <a href="./Bottle_rockets.html" class="footer-link">Bottle Rockets</a>
+          </li>
+
+          <li>
+            <a href="./Model_rocket.html" class="footer-link">Model Rockets</a>
+          </li>
+
+          <li>
+            <a href="./Full_scale_rockets.html" class="footer-link">Full Scale Rockets</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Developed by Club ANTERiX
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon-link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

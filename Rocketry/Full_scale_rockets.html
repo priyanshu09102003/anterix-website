@@ -1,0 +1,1057 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Full Scale Rockets</title>
+  <meta name="title" content="Cryptoza - Trusted & Secure Trading Crypto Wallet">
+  <meta name="description" content="This is a cryptocurrency wallet html template made by codewithsadee.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/anterix_White-removebg-preview.svg" width="185" height="31" alt="Anterix">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/anterix_White-removebg-preview.svg" width="185" height="31" alt="Anterix">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#rocket_parts" class="navbar-link">Rocket Parts</a>
+          </li>
+
+          <li>
+            <a href="#rocket_systems" class="navbar-link">Rocket Systems</a>
+          </li>
+
+          <li>
+            <a href="#ISRO_gallery" class="navbar-link">ISRO Gallery</a>
+          </li>
+
+          <li>
+            <a href="#rocket_orbiting" class="navbar-link">Rocket Orbitting</a>
+          </li>
+
+          <li>
+            <a href="#booster_staging" class="navbar-link">Booster Staging</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" aria-label="home">
+        <div class="container">
+
+            <div class="hero-content">
+                <h1 class="h1 hero-title">Full Scale Rockets</h1>
+                <p class="hero-text">
+                    Full-scale rockets are powerful launch vehicles designed to transport payloads, satellites, and even humans beyond Earth's atmosphere. Unlike small model rockets, these massive machines use advanced propulsion systems, sophisticated guidance technology, and cutting-edge materials to withstand the harsh conditions of space travel.
+                </p>
+
+                <div class="btn-group">
+                    <a href="#" class="hero-play-btn" onclick="heroOpenVideo()">
+                        <div class="hero-icon">
+                            <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
+                        </div>
+                        <span class="hero-span">How does a rocket work?</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-banner">
+                <figure class="hero-banner">
+                    <img src="./assets/images/hero-banner-four.gif" width="600" height="700" alt="hero banner" class="w-100" style="border-radius: 20px; height: 700px;">
+                </figure>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Video Overlay -->
+    <div id="hero-videoOverlay" class="hero-video-overlay">
+        <div class="hero-video-container">
+            <span class="hero-close-btn" onclick="heroCloseVideo()">&times;</span>
+            <iframe 
+                id="hero-videoPlayer" 
+                src="https://www.youtube.com/embed/QQB1Iw3zJbc" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+      <!-- 
+        - #ROCKET PARTS
+      -->
+
+
+      <section class="stats" aria-label="statistics" id="rocket_parts" style="margin-top: 40px;">
+        <div class="container">
+
+          <div class="stats-content">
+
+            <h2 class="h2 section-title">Rocket Parts</h2>
+
+            <p class="section-text">
+                There are many parts that make up a rocket. For design and analysis, engineers group parts which have the same function into systems. There are four major systems in a full-scale rocket: the structural system, the payload system, the guidance system, and the propulsion system.
+            </p>
+            <br>
+            <h3 style="color: white;">Structural System</h3>
+            <p class="section-text">
+                The rocket’s frame, like an airplane fuselage, is made of strong yet lightweight materials like titanium or aluminum. It consists of vertical stringers and circular hoops, covered by a skin that may have thermal protection. This protects against heat from air friction and maintains cold temperatures for fuels. Some rockets have fins at the base for stability.
+            </p>
+            <br>
+            <h3 style="color: white;">Payload System</h3>
+            <p class="section-text">
+                A rocket's payload depends on its mission. Early rockets carried fireworks, while later ones transported explosives and nuclear warheads. Modified rockets launched satellites for communication, weather monitoring, spying, and space exploration. Special rockets were designed to send humans into orbit and to the Moon.
+            </p>
+            <br>
+            <h3 style="color: white;">Guidance System</h3>
+            <p class="section-text">
+                A rocket's guidance system includes sensors, computers, radars, and communication tools for flight control. Early rockets used vanes in the nozzle, while modern ones rotate the nozzle for maneuvering. It also ensures stability to prevent tumbling during flight.
+             </p>
+             <br>
+            <h3 style="color: white;">Propulsion System</h3>
+            <p class="section-text">
+                Rockets use liquid or solid propulsion systems. The V2 had a liquid engine with fuel, oxidizer tanks, pumps, and a combustion chamber. Modern rockets like the Space Shuttle and Delta II use solid rocket boosters.
+             </p>
+
+            <ul class="stats-list">
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Structural System </h3>
+
+                  <p class="card-text">
+                    Frame, stringers, hoops, skin, fins
+                  </p>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Payload System</h3>
+
+                  <p class="card-text">
+                    Satellites, instruments, cargo, crew
+                  </p>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Guidance System </h3>
+
+                  <p class="card-text">
+                    Sensors, computers, radars, communication
+                  </p>
+
+                </div>
+              </li>
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Propulsion System </h3>
+
+                  <p class="card-text">
+                    Fuel tanks, oxidizers, pumps, nozzles, combustion chamber
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="stats-banner">
+            <img src="./assets/images/rocket_parts.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px; height: 280px;">
+            <p>Fig: Structural System of Rocket</p>
+            <br>
+            <img src="./assets/images/rocket_parts_2.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px; height: 280px;">
+            <p>Fig: Payload System of Rocket</p>
+            <br>
+            <img src="./assets/images/rocket_parts_3.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px; height: 200px;">
+            <p>Fig: Guidance System of Rocket</p>
+            <br>
+            <img src="./assets/images/rocket_parts_4.jpg" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px; height: 250px;">
+            <p>Fig: Propulsion(electric) System of Rocket</p>
+            <br>
+          </figure>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #ROCKET SYSTEMS
+      -->
+      <section class="app" aria-label="app" id="rocket_systems" style="margin-top: 50px;">
+        <div class="container">
+    
+            <div class="app-card bg-gray">
+    
+                <div class="card-content">
+    
+                    <h2 class="h2 section-title">Rocket Systems - Structural System</h2>
+    
+                    <p class="section-text">
+                        The structural system of a rocket includes all of the parts which make up the frame of the rocket; the cylindrical body, the fairings, and any control fins. The function of the structural system is to transmit the loads from the forces generated during the flight and to provide low aerodynamic drag for flight through the atmosphere.
+                    </p>  
+                    <br>  
+                    <h3>Performance of a Rocket</h3>
+                    <p class="section-text">
+                        Rocket structures must be strong but light weight. The performance of the rocket depends directly on the weight of the structure. A variety of mass ratios are used to characterize the structural weight of a rocket. The distribution of the structural weight also affects the center of gravity of the rocket which, in turn, affects the stability and control of the rocket. During the flight of a rocket to orbit, some parts of the structure are discarded in a process called staging.
+                    </p>
+                    <br>  
+                    <h3>Example - Atlas & Saturn V</h3>
+                    <p class="section-text">
+                        The Atlas rocket was developed in the late 1950’s as an intercontinental ballistic missile. Two sustainer rocket engines were discarded during the launch, but the entire central sustainer section went into orbit. The Saturn V was a three stage rocket that sent astronauts to the Moon in 1969. The first stage was 138 feet tall, 33 feet in diameter, and weighed 305,000 pounds empty. The stage was filled with 4.5 million pounds of propellants prior to launch.
+                    </p>
+    
+                </div>
+    
+                <figure class="card-banner">
+                    <img src="./assets/images/structural_system_1.png" width="383" height="384" loading="lazy" alt="motion" class="w-100" style="border-radius: 20px;">
+                    <p>Fig: Atlas & Saturn V</p>
+                    <br>
+                    <img src="./assets/images/structural_system_2.gif" width="383" height="384" loading="lazy" alt="motion" class="w-100" style="border-radius: 20px;">
+                    <p>Fig: Various Structural Systems of a Rocket</p>
+                
+                </figure>
+                
+                
+    
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="app" aria-label="app"  style="margin-top: 50px;">
+        <div class="container">
+    
+            <div class="app-card bg-gray">
+    
+                <div class="card-content">
+    
+                    <h2 class="h2 section-title">Rocket Systems - Payload System</h2>
+    
+                    <p class="section-text">
+                        A rocket's payload depends on its mission. Early rockets carried fireworks, later replaced by explosives on the German V2. Post-World War II, rockets evolved into ballistic missiles and satellite launchers for communication, weather, spying, and space exploration.
+                    </p>
+    
+                    <br>
+    
+                    <h3>Parts of a Rocket Payload</h3>
+    
+                    <p class="section-text">
+                        1. <b><u>Payload Bay</u></b> – The compartment that houses satellites, scientific instruments, cargo, or crew modules. <br>
+                        2. <b><u>Fairing</u></b> – A protective shell that shields the payload from aerodynamic forces and is jettisoned after launch.<br>
+                        3. <b><u>Deployment Mechanism</u></b> – Systems like clamps, springs, or thrusters that release the payload into its intended orbit or trajectory.<br>
+                        4. <b><u>Avionics & Sensors </u></b> – Electronic components for navigation, communication, and data collection during the mission. <br>
+                        5. <b><u>Thermal Protection </u></b> – Insulation or coatings that protect the payload from extreme temperatures in space.<br>
+                    </p>
+                    <br>
+                    <h3>Human Payloads</h3>
+                    <p class="section-text">
+                        Human payloads refer to astronauts and life-supporting systems carried by rockets for space missions. These payloads are designed to ensure safety, comfort, and survival in extreme space environments.
+                        <br>
+                        1. <b><u>Crew Module</u></b> – A pressurized capsule where astronauts live and work during the mission. <br>
+                        2. <b><u> Life Support System</u></b> – Provides oxygen, temperature control, and waste management.<br>
+                        3. <b><u>Seats & Restraints</u></b> – Protect astronauts from high G-forces during launch and re-entry.<br>
+                        4. <b><u>Control Panels </u></b> – Allow astronauts to monitor and operate spacecraft functions. <br>
+                        5. <b><u>Escape System </u></b> – A safety mechanism for emergency aborts during launch.<br>
+
+                    </p>
+
+                </div>
+    
+                <figure class="card-banner">
+                    <img src="./assets/images/payload_1.gif" width="383" height="384" loading="lazy" alt="motion" class="w-100" style="border-radius: 20px;">
+                    <p>Fig: Picture of Mercury, Gemini and Apollo.</p>
+                    <p style="font-size: 12px;"><b>Context:</b> <i>The Gemini spacecraft (1960s) carried two astronauts, testing rendezvous, docking, spacewalking, and long-duration spaceflight. During Apollo, the U.S. developed Saturn rockets for Moon missions.</i></p>
+                
+                    <!-- Embedded 3D Model -->
+                    <model-viewer 
+                        src="./rocket_model.glb"  
+                        alt="3D Rocket Model"
+                        auto-rotate 
+                        camera-controls
+                        touch-action="pan-y"
+                        ar
+                        style="width: 100%; height: 400px; ">
+                    </model-viewer>
+                    <p>Fig: NASA Nexus(1960s)</p>
+                    <p><b>3D Simulation </b>(Touch to rotate, zoom and explore)</p>
+                
+                    <br>
+                    <img src="./assets/images/payload_system_2.gif" width="383" height="384" loading="lazy" alt="motion" class="w-100" style="border-radius: 20px;">
+                    <p>Fig: Vega Rideshare Launch</p>
+                </figure>
+    
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="app" aria-label="app"  style="margin-top: 50px;">
+        <div class="container">
+    
+            <div class="app-card bg-gray">
+    
+                <div class="card-content">
+    
+                    <h2 class="h2 section-title">Rocket Systems - Propulsion System</h2>
+    
+                    <p class="section-text">
+                        The propulsion system includes the engine, tanks, pumps, propellants, power head, and nozzle, generating thrust to move the rocket.
+                        Thrust, produced per Newton’s third law, results from accelerating a working fluid, creating an opposite force. The thrust equation depends on mass flow and gas exit velocity.
+                    </p>
+    
+                    <br>
+    
+                    <h3>Rocket Engine</h3>
+    
+                    <p class="section-text">
+                        A rocket engine combines fuel and oxidizer in a combustion chamber, generating hot exhaust gases that accelerate through a nozzle to produce thrust. Unlike turbine engines or propellers, which rely on atmospheric air, rockets carry their own oxidizer, allowing them to function in space where no air is present.
+                    </p>
+                    <br>
+                    <h3>Types of Engines - Liquid & Solid Rockets</h3>
+                    <p class="section-text">
+                        There are two main categories of rocket engines: liquid rockets and solid rockets.
+                        <br>
+                        1. <b><u>Solid Rocket:</u></b> – Propellants are pre-mixed into a solid form and burn continuously once ignited. Simple, storable for years, but cannot be stopped once started. <br>
+                        2. <b><u> Liquid Rocket:</u></b> – Stores fuel and oxidizer separately, mixed in the combustion chamber. More complex and heavier but allows controlled ignition and shutdown.<br>
+                    </p>
+
+                </div>
+    
+                <figure class="card-banner">
+                    <img src="./assets/images/propulsion_system_1.jpg" width="383" height="384" loading="lazy" alt="motion" class="w-100" style="border-radius: 20px; height: 280px;">
+                    <p>Fig: Liquid Propellants V/S Solid Propellants</p>
+                    <br>
+                    <!-- Embedded 3D Model -->
+                    <model-viewer 
+                        src="./rocket_engine.glb"  
+                        alt="3D Rocket Model"
+                        auto-rotate 
+                        camera-controls
+                        touch-action="pan-y"
+                        ar
+                        style="width: 100%; height: 400px; ">
+                    </model-viewer>
+                    <p>Fig: Rocket Engine</p>
+                    <p><b>3D Simulation </b>(Touch to rotate, zoom and explore)</p>
+                </figure>
+    
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="app" aria-label="app"  style="margin-top: 50px;">
+        <div class="container">
+    
+            <div class="app-card bg-gray">
+    
+                <div class="card-content">
+    
+                    <h2 class="h2 section-title">Rocket Systems - Guidance System</h2>
+    
+                    <p class="section-text">
+                        The guidance system of a rocket includes very sophisticated sensors, on-board computers, radars, and communication equipment. The guidance system has two main roles during the launch of a rocket; to provide stability for the rocket, and to control the rocket during maneuvers.
+                    </p>
+    
+                    <br>
+    
+                    <h3>Motion</h3>
+    
+                    <p class="section-text">
+                        The motion of any object in flight is a combination of the translation of the center of gravity and the rotation of the object about its center of gravity. Many different methods have been developed to control rockets in flight. All of the control methods produce a torque about the rocket’s center of gravity which causes the rocket to rotate in flight. Through an understanding of the forces acting on the rocket and the resulting motion, the rocket guidance system can be programmed to intercept targets, or to fly into orbit.
+                    </p>
+                    <br>
+                    <h3>Stability of a Rocket</h3>
+                    <p class="section-text">
+                        A rocket is stable if it naturally returns to its flight path after disturbance. In atmospheric flight, stability is maintained by keeping the center of pressure below the center of gravity, using fins or added weight. Above the atmosphere, guidance systems ensure stability.
+                    </p>
+
+                </div>
+    
+                <figure class="card-banner">
+                    <img src="./assets/images/guidance_system_1.png" width="383" height="384" loading="lazy" alt="motion" class="w-100" style="border-radius: 20px;">
+                    <p>Fig: Guidance System</p>
+                    <br>
+                    <img src="./assets/images/guidance_system_2.jpg" width="383" height="384" loading="lazy" alt="motion" class="w-100" style="border-radius: 20px;">
+                    <p>Fig: Guidance Navigation by a rocket</p>
+                </figure>
+    
+            </div>
+    
+        </div>
+    </section>
+
+
+     <!-- ISRO Gallery -->
+
+     <section class="section instruction" aria-label="instruction" id="ISRO_gallery">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">ISRO Gallery</h2>
+        
+          <div class="stability" style="margin-bottom: 30px;">
+            <p class="section-text">
+                Step into the ISRO Gallery, where you can explore cutting-edge rockets, complex space satellites, and advanced rovers that have played a crucial role in India’s space missions. This exhibit highlights the engineering excellence, scientific breakthroughs, and technological advancements that have propelled India’s space exploration to new heights. Witness the evolution of space technology and discover how these innovations continue to shape the future of interplanetary exploration.
+            </p>
+            <img src="./assets/images/ISRO-Photoroom.png" alt="ISRO" class="stability-image" style="border-radius: 20px;">
+        </div>
+        
+        
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                  <img src="./assets/images/ISRO-Photoroom.png" width="40" height="20" loading="lazy" alt="icon">
+                </div>
+                <h3 class="h3 card-title">GSLV (Geosynchronous Satellite Launch Vehicle)</h3>
+                <p class="card-text">
+                    The GSLV is an expendable launch vehicle developed by ISRO to place satellites into geosynchronous transfer orbit (GTO). It features a cryogenic upper stage, allowing it to carry heavier payloads compared to earlier rockets. GSLV plays a vital role in launching communication, weather, and scientific satellites, enhancing India’s space capabilities. 
+                </p>
+                <figure class="card-banner">
+                    <model-viewer 
+                        src="./gslv_mk3.glb" 
+                        alt="3D Model of GSLV MK3 Rocket"
+                        auto-rotate 
+                        camera-controls 
+                        touch-action="pan-y"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px;">
+                    </model-viewer>
+                    <p >GSLV in 3D</p>
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                    <img src="./assets/images/ISRO-Photoroom.png" width="40" height="20" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="h3 card-title">PSLV (Polar Satellite Launch Vehicle)</h3>
+                <p class="card-text">
+                    The PSLV is one of ISRO’s most reliable and versatile launch vehicles, designed to place satellites into polar, geosynchronous, and low Earth orbits. Known for its four-stage design, it has been instrumental in launching Earth observation, navigation, and interplanetary missions. Its high success rate has made it a key player in India's space program. 
+                </p>
+                <figure class="card-banner">
+                    <model-viewer 
+                        src="./pslv_c40.glb" 
+                        alt="3D Model of GSLV MK3 Rocket"
+                        auto-rotate 
+                        camera-controls 
+                        touch-action="pan-y"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px;">
+                    </model-viewer>
+                    <p >PSLV in 3D</p>
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+                <div class="instruction-card bg-gray">
+  
+                  <div class="card-icon">
+                    <img src="./assets/images/ISRO-Photoroom.png" width="40" height="20" loading="lazy" alt="icon">
+                  </div>
+                  <h3 class="h3 card-title">GSAT (Geo-Stationary Satellite)</h3>
+                  <p class="card-text">
+                    The GSAT series is a group of Indian geostationary communication satellites developed by ISRO to enhance telecommunications, broadcasting, broadband, and weather services across India. Positioned in geostationary orbit, GSAT satellites provide continuous coverage, supporting applications like DTH services, mobile connectivity, disaster management, and tele-education.
+                  </p>
+                  <figure class="card-banner">
+                    <model-viewer 
+                        src="./space_satellite.glb" 
+                        alt="3D Model of GSLV MK3 Rocket"
+                        auto-rotate 
+                        camera-controls 
+                        touch-action="pan-y"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px;">
+                    </model-viewer>
+                    <p >GSAT in 3D</p>
+                </figure>
+
+  
+                </div>
+            </li>
+
+            <li>
+                <div class="instruction-card bg-gray">
+  
+                  <div class="card-icon">
+                    <img src="./assets/images/ISRO-Photoroom.png" width="40" height="20" loading="lazy" alt="icon">
+                  </div>
+  
+                  <h3 class="h3 card-title">Pragyan Rover – ISRO’s Mars Rover</h3>
+                  <p class="card-text">
+                    ISRO’s Mars Rover was initially planned as part of the Mangalyaan-2 (Mars Orbiter Mission-2) but was later focused on future missions. However, ISRO successfully developed the Pragyan Rover, which was part of the Chandrayaan-2 and Chandrayaan-3 lunar missions.
+                  </p>
+                  <p>India hasn’t deployed a Mars rover yet, but ISRO is developing a potential lander and rover for Mangalyaan-2 and future missions.</p>
+                  <figure class="card-banner">
+                    <model-viewer 
+                        src="./mars_rover_2.glb" 
+                        alt="3D Model of GSLV MK3 Rocket"
+                        auto-rotate 
+                        camera-controls 
+                        touch-action="pan-y"
+                        ar-modes="webxr scene-viewer quick-look"
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px;">
+                    </model-viewer>
+                    <p >Pragyan Rover in 3D</p>
+                </figure>
+  
+                </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- ROCKET ORBITING -->
+
+      <section class="section promo" aria-label="promo" id="rocket_orbiting">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Rocket Orbitting</h2>
+
+          <section class="stats" aria-label="statistics" id="force_on_rocket" style="margin-top: 40px;">
+            <div class="container">
+    
+              <div class="stats-content">
+    
+                <h3>Flight To Orbit</h3>
+    
+                <p class="section-text">
+                    Rockets use thrust to overcome weight, while aerodynamic forces affect stomp rockets, bottle rockets, and model rockets. For missiles and satellite launchers, aerodynamics matter less as they exit the atmosphere quickly to reach orbit.
+                </p>
+
+                <h3>Thrust and Weight</h3>
+    
+                <p class="section-text">
+                    Throughout the flight, the weight of the rocket is constantly changing because of the burning of the propellants. At launch, the thrust produced by the engine is greater than the weight of the rocket and the net force accelerates the rocket away from the pad. Unlike model rockets, full scale launchers rely on a sophisticated guidance system to balance and steer the rocket during its flight. The thrust of the rocket is gimbaled, or rotated, during the flight to produce maneuvers. Leaving the pad, the rocket begins a powered vertical ascent. The vehicle accelerates because of the high thrust and decreasing weight and rather quickly moves out of the thick atmosphere near the surface of the earth. Although the rocket is traveling supersonically, the drag on the vehicle is small because of the shape of the rocket and the lower air density at altitude. As the rocket ascends, it also begins to pitch over, and its flight path becomes more inclined to the vertical.
+                </p>
+    
+              </div>
+    
+              <figure class="stats-banner">
+                <img src="./assets/images/rocket_orbitting_1.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+                <br>
+                <img src="./assets/images/rocket_orbitting_2.gif" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;height: 350px;">
+              </figure>
+    
+            </div>
+          </section>
+
+          <p class="section-text text-center" style="margin-top: 20px;">
+            Several minutes into the ascent, most launchers discard some of the weight of the rocket. This process is called staging and often includes the ignition of a second engine, or upper stage, of the launcher.
+          </p>
+
+
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="promo-card bg-gray">
+
+                <h3 class="h3 card-title">Orbital Velocity</h3>
+
+                <p class="card-text">
+                    Determines the velocity (V) required for a satellite or spacecraft to maintain a stable circular orbit at a given altitude (h) above Earth.
+                </p>
+                            \[
+                            \mathbf{V = \sqrt{\frac{g_0 R_e^2}{R_e + h}}}
+                            \]
+                <p class="card-text">
+                    The equation shows that orbital velocity decreases as altitude increases.
+                </p>
+
+                <a href="./assets/images/orbital_velocity_2.gif" class="btn-link">
+                  <span class="span">View</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="promo-card bg-gray">
+
+                <h3 class="h3 card-title">Orbital Period Equation</h3>
+
+                <p class="card-text">
+                    Determines the time period (T) required for a satellite to complete one full orbit around Earth.
+                    This equation is derived from Kepler’s Third Law, indicating that higher orbits have longer periods.
+                </p>
+                <p>
+                    \[
+                    \mathbf{T^2 = \frac{4\pi^2 (R_e + h)^3}{g_0 R_e^2}}
+                    \]
+                </p>
+
+                <a href="./assets/images/orbital_velocity.gif" class="btn-link">
+                  <span class="span">View</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="gif-overlay" id="gifOverlay">
+            <div class="gif-container">
+                <button class="closeGifBtn" id="closeGifBtn">&times;</button>
+                <img id="gifImage" src="" alt="GIF Preview">
+            </div>
+        </div>
+        
+
+        </div>
+      </section>
+
+      <!-- INTERNATIONAL SPACE STATION -->
+
+      <section class="section promo" aria-label="promo">
+        <div class="container">
+
+        <h2 class="h2 section-title text-center">Beyond Earth: The INTERNATIONAL SPACE STATION</h2>
+
+          <section class="stats" aria-label="statistics" id="force_on_rocket" style="margin-top: 40px;">
+            <div class="container">
+    
+              <div class="stats-content">
+    
+                <p class="section-text">
+                    The International Space Station (ISS) is a cutting-edge space laboratory orbiting Earth at an altitude of around 400 km. It serves as a global research hub where astronauts from various space agencies conduct experiments in microgravity, advancing science in fields like medicine, technology, and space exploration. The ISS also plays a crucial role in testing technologies for future deep-space missions. Continuously inhabited since 2000, it stands as a symbol of international collaboration and human ingenuity in space.
+                </p>
+
+                
+                <p class="section-text">
+                    <h3>Blasts from the Past</h3>
+                    <br>
+                   <li style="list-style: circle;"><b>November 20, 1998</b> - The first module, Zarya, was launched by Russia. With the launch of the first module, Zarya, the ISS was officially established as an international collaborative space station.</li>
+                   <li style="list-style: circle;"><b>December 6, 1998</b> - The U.S. module Unity was added to Zarya, beginning ISS assembly.</li>
+                   <li style="list-style: circle;"><b>November 2, 2000</b> - The first crew (Expedition 1) arrived, marking continuous human presence.</li>
+                   <li style="list-style: circle;"><b>February 7, 2001</b> - The Destiny Laboratory Module was added, enabling scientific research.</li>
+                   <li style="list-style: circle;"><b>October 23, 2007</b> - The Harmony module was installed, expanding living and working space.</li>
+                   <li style="list-style: circle;"><b>May 29, 2009</b> - ISS construction was officially completed.</li>
+                   <li style="list-style: circle;"><b>March 27, 2015</b> - The U.S. astronaut Scott Kelly and Russian cosmonaut Mikhail Kornienko began a one-year mission to study long-duration space travel.</li>
+                   <li style="list-style: circle;"><b>November 2, 2020</b> - ISS celebrated 20 years of continuous human occupation.</li>
+                </p>
+
+              </div>
+    
+              <figure class="stats-banner">
+                <img src="./assets/images/ISS_diagram.jpg" width="797" height="200" alt="map" class="w-100" style="border-radius: 20px; height: 380px;">
+                <p>Fig: Schematic Representation of the ISS</p>
+                <br>
+                <model-viewer 
+                    src="./iss-_international_space_station.glb"  
+                    alt="3D Rocket Model"
+                    auto-rotate 
+                    camera-controls
+                    touch-action="pan-y"
+                    ar
+                    style="width: 100%; height: 400px; ">
+                 </model-viewer>
+                    <p>Fig: 3D Visualization of the International Space Station</p>
+              </figure>
+    
+            </div>
+          </section>
+
+
+        </div>
+        
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #BOOSTER STAGING
+      -->
+      <section class="app" aria-label="app" id="booster_staging" style="margin-top: 50px;">
+        <div class="container">
+    
+            <div class="app-card bg-gray">
+    
+                <div class="card-content">
+    
+                    <h2 class="h2 section-title">Booster Staging</h2>
+    
+                    <p class="section-text">
+                        <h3>What is Staging?</h3>
+                        Rockets generate thrust to overcome their weight, with most of the lift-off mass being propellants. As fuel burns, the vehicle’s weight shifts to its near-empty structure. To reduce weight and reach orbital velocity, launchers discard sections in a process called staging.
+                    </p>  
+                    <br>  
+                    <h3>Types of Staging</h3>
+                    <p class="section-text">
+                        <li style="list-style: circle;"><b>Serial Staging</b> - In serial staging, a smaller second stage is placed atop a larger first stage. The first stage ignites at launch, burning fuel until depleted, then separates, and the second stage ignites, carrying the payload into orbit. The Saturn V used this three-stage process, discarding each stage after use, with no retrieval.</li><br>
+                        <li style="list-style: circle;"><b>Parallel Staging</b> - In parallel staging, multiple strap-on boosters are attached to a central sustainer rocket. All engines ignite at launch, and when the boosters burn out, they are discarded while the sustainer continues to orbit. Used in the Space Shuttle, its solid rocket boosters were recovered, refueled, and reused.</li><br>
+                    </p>
+                    <br>  
+                </div>
+    
+                <figure class="card-banner">
+                    <img src="./assets/images/Serial_staging.png" width="383" height="384" loading="lazy" alt="motion" class="w-100" style="border-radius: 20px;">
+                    <p>Fig: Serial Staging</p>
+                    <br>
+                    <img src="./assets/images/parallel_staging.png" width="383" height="384" loading="lazy" alt="motion" class="w-100" style="border-radius: 20px;">
+                    <p>Fig: Parallel Staging</p>
+                
+                </figure>
+                
+                
+    
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- Rocketry Archive -->
+    <section class="section instruction" aria-label="instruction">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Rocketry Archive</h2>
+        
+          <div class="stability" style="margin-bottom: 30px;">
+            <p class="section-text">
+                Explore a remarkable collection of rockets, space shuttles, and vital space components that have driven humanity’s journey beyond Earth. Delve into the innovations that shaped space exploration. Glimpses of various rockets used by NASA to launch a variety of payloads into the orbit.
+            </p>
+            <img src="./assets/images/ROCKETRY-Photoroom.svg" alt="ISRO" class="stability-image" style="border-radius: 20px;">
+        </div>
+        
+        
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                  <img src="./assets/images/NASA-Photoroom.png" width="40" height="20" loading="lazy" alt="icon">
+                </div>
+                <h3 class="h3 card-title">ATLAS</h3>
+                <br>
+                <figure class="card-banner">
+                    <model-viewer 
+                        src="./atlas_v_401.glb" 
+                        alt="3D Model of GSLV MK3 Rocket"
+                        auto-rotate 
+                        camera-controls 
+                        touch-action="pan-y"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px;">
+                    </model-viewer>
+                    <p >For launching satellites, space probes, and as the booster for Mercury missions, carrying astronauts into orbit. </p>
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                    <img src="./assets/images/NASA-Photoroom.png" width="40" height="20" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="h3 card-title">REDSTONE</h3>
+                <br>
+                <figure class="card-banner">
+                    <model-viewer 
+                        src="./mercury-_redstone_launch_vehicle.glb" 
+                        alt="3D Model of GSLV MK3 Rocket"
+                        auto-rotate 
+                        camera-controls 
+                        touch-action="pan-y"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px;">
+                    </model-viewer>
+                    <p >Used by NASA to launch the first American astronaut, Alan Shepard, and for early Mercury missions and military applications.</p>
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+                <div class="instruction-card bg-gray">
+  
+                  <div class="card-icon">
+                    <img src="./assets/images/NASA-Photoroom.png" width="40" height="20" loading="lazy" alt="icon">
+                  </div>
+                  <h3 class="h3 card-title">TITAN</h3>
+                  <br>
+                  <figure class="card-banner">
+                    <model-viewer 
+                        src="./titan_iv.glb" 
+                        alt="3D Model of GSLV MK3 Rocket"
+                        auto-rotate 
+                        camera-controls 
+                        touch-action="pan-y"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px;">
+                    </model-viewer>
+                    <p >Used by NASA for launching Gemini missions, satellites, and interplanetary probes, and served as a heavy-lift launch vehicle.</p>
+                </figure>
+
+  
+                </div>
+            </li>
+
+            <li>
+                <div class="instruction-card bg-gray">
+  
+                  <div class="card-icon">
+                    <img src="./assets/images/NASA-Photoroom.png" width="40" height="20" loading="lazy" alt="icon">
+                  </div>
+  
+                  <h3 class="h3 card-title">SATURN</h3>
+                  <br>
+                  <figure class="card-banner">
+                    <model-viewer 
+                        src="./saturn_v_-_nasa.glb" 
+                        alt="3D Model of GSLV MK3 Rocket"
+                        auto-rotate 
+                        camera-controls 
+                        touch-action="pan-y"
+                        ar-modes="webxr scene-viewer quick-look"
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px;">
+                    </model-viewer>
+                    <p >Used by NASA for launching Apollo Moon missions, Skylab, and heavy payloads into space. </p>
+                </figure>
+  
+                </div>
+            </li>
+
+            <li>
+                <div class="instruction-card bg-gray">
+  
+                  <div class="card-icon">
+                    <img src="./assets/images/NASA-Photoroom.png" width="40" height="20" loading="lazy" alt="icon">
+                  </div>
+  
+                  <h3 class="h3 card-title">SPACE SHUTTLE DISCOVERY</h3>
+                  <br>
+                  <figure class="card-banner">
+                    <model-viewer 
+                        src="./space_shuttle_002.glb" 
+                        alt="3D Model of GSLV MK3 Rocket"
+                        auto-rotate 
+                        camera-controls 
+                        touch-action="pan-y"
+                        ar-modes="webxr scene-viewer quick-look"
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px;">
+                    </model-viewer>
+                    <p >Used by NASA for deploying satellites, assembling the International Space Station (ISS), and conducting scientific missions in orbit. </p>
+                </figure>
+  
+                </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/ROCKETRY-Photoroom.svg" width="200" height="31" alt="Rocketry">
+          </a>
+
+          <p class="footer-text">
+            Simplifying rocketry, igniting curiosity, and making space science exciting.
+          </p>
+
+        </div>
+
+        <br>
+        <br>
+        <h3>Navigate through Rocketry</h3>
+        <ul class="footer-list">
+
+          <li>
+            <a href="./Compressed_air_rockets.html" class="footer-link">Compressed Air Rockets</a>
+          </li>
+
+          <li>
+            <a href="./Bottle_rockets.html" class="footer-link">Bottle Rockets</a>
+          </li>
+
+          <li>
+            <a href="./Model_rocket.html" class="footer-link">Model Rockets</a>
+          </li>
+
+          <li>
+            <a href="./Rocket Motion.html" class="footer-link">Rocket Fundamentals</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Developed by Club ANTERiX
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <!-- 
+    - ionicon-link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Model Rockets</title>
+  <meta name="title" content="Cryptoza - Trusted & Secure Trading Crypto Wallet">
+  <meta name="description" content="This is a cryptocurrency wallet html template made by codewithsadee.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/anterix_White-removebg-preview.svg" width="185" height="31" alt="Anterix">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/anterix_White-removebg-preview.svg" width="185" height="31" alt="Anterix">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+    
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#model_rocket" class="navbar-link">About Model Rocket</a>
+          </li>
+
+          <li>
+            <a href="#flight" class="navbar-link">Flight of model rocket</a>
+          </li>
+
+          <li>
+            <a href="#engine" class="navbar-link">Model Rocket Engine</a>
+          </li>
+
+          <li>
+            <a href="#performance" class="navbar-link">Engine Performance</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" aria-label="home">
+        <div class="container">
+
+            <div class="hero-content">
+                <h1 class="h1 hero-title">Model Rockets</h1>
+                <p class="hero-text">
+                    Experience the excitement of model rocketry, where science meets adventure! Learn how small-scale rockets mimic real space missions, using aerodynamics, propulsion, and physics to soar into the sky.
+                </p>
+
+                <div class="btn-group">
+                    <a href="#" class="hero-play-btn" onclick="heroOpenVideo()">
+                        <div class="hero-icon">
+                            <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
+                        </div>
+                        <span class="hero-span">Let's Build a Model Rocket</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-banner">
+                <figure class="hero-banner">
+                    <img src="./assets/images/Model_rocket.gif" width="600" height="700" alt="hero banner" class="w-100" style="border-radius: 20px;">
+                </figure>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Video Overlay -->
+    <div id="hero-videoOverlay" class="hero-video-overlay">
+       <div class="hero-video-container">
+    <span class="hero-close-btn" onclick="heroCloseVideo()">&times;</span>
+    <iframe 
+        id="hero-videoPlayer" 
+        src="https://www.youtube.com/embed/xVQfGts180Y" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+    </div>
+
+      <!-- 
+        - #ABOUT MODEL ROCKETS
+      -->
+
+
+      <section class="stats" aria-label="statistics" id="model_rocket" style="margin-top: 40px;">
+        <div class="container">
+
+          <div class="stats-content">
+
+            <h2 class="h2 section-title">About Model Rocket</h2>
+
+            <p class="section-text">
+                Flying model rockets is a relatively safe and inexpensive way for students to learn the basics of forces and the response of a vehicle to external forces. Like an airplane, a model rocket is subjected to the forces of weight, thrust, and aerodynamics during its flight.
+            </p>
+            <br>
+            <h3 style="color: white;">Parts of a Single Stage Model Rocket</h3>
+            <p class="section-text">
+                Model rockets are small-scale rockets designed for educational and recreational launches. They use pre-packaged solid fuel engines, are reusable, and include a recovery system for safe landings.
+            </p>
+            <p class="section-text">
+                <li style="list-style: circle;"><b>Body Tube</b> - The main structure, usually made of cardboard.</li>
+                <li style="list-style: circle;"><b>Fins</b> - Provide stability during flight, made of plastic or balsa wood.</li>
+                <li style="list-style: circle;"><b>Engine Mount</b> - Holds the solid-fuel engine and transmits thrust to the rocket.</li>
+                <li style="list-style: circle;"><b>Solid-Fuel Engine</b> - Single-use engine providing thrust; available in different sizes.</li>
+                <li style="list-style: circle;"><b>Ejection Charge</b> - Pressurizes the body tube to deploy the recovery system.</li>
+                <li style="list-style: circle;"><b>Recovery Wadding</b> - Protects the parachute from hot gases.</li>
+                <li style="list-style: circle;"><b>Recovery System</b> - Parachute or streamer ensures a safe landing.</li>
+                <li style="list-style: circle;"><b>Nose Cone</b> - Reduces air resistance and houses the shock cord.</li>
+                <li style="list-style: circle;"><b>Shock Cord</b> - Keeps rocket parts connected after deployment.</li>
+                <li style="list-style: circle;"><b>Launch Lugs</b> - Small tubes guiding the rocket on the launch rail.</li>
+            </p>
+            <br>
+            <h3 style="color: white;">Building & Launching</h3>
+            <p class="section-text">
+                <li style="list-style: circle;">The body tube is assembled with fins and an engine mount.</li>
+                <li style="list-style: circle;">A solid-fuel engine is inserted before launch.</li>
+                <li style="list-style: circle;">Recovery wadding and a parachute are packed for a safe descent.</li>
+                <li style="list-style: circle;">The rocket is launched using a launch rail, ensuring a stable ascent.</li>
+            </p>
+
+          </div>
+
+          <figure class="stats-banner">
+            <img src="./assets/images/About_model_rockets_1.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+            <br>
+            <img src="./assets/images/About_model_rocket_2.gif" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+            <p>Fig: Demo Launch of a Model Rocket</p>
+          </figure>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #FLIGHT OF A MODEL ROCKET
+      -->
+
+      <section class="app" aria-label="app" id="flight" style="margin-top: 50px;">
+        <div class="container">
+    
+            <div class="app-card bg-gray">
+    
+                <div class="card-content">
+    
+                    <h2 class="h2 section-title">Flight of a Model Rocket</h2>
+    
+                    <h3>Phenomenon in the Flight</h3>
+    
+                    <p class="section-text">
+                        <li style="list-style: circle;"><b>Launch & Powered Ascent</b> - The thrust exceeds weight, propelling the rocket upwards with aerodynamic lift and drag acting on it.</li>
+                        <li style="list-style: circle;"><b>Coasting Phase</b> - The engine burns out, and the rocket slows down due to drag and gravity, reaching its maximum altitude.</li>
+                        <li style="list-style: circle;"><b>Delay Charge & Ejection</b> - A slow-burning charge helps track the rocket, before the ejection charge deploys the parachute.</li>
+                        <li style="list-style: circle;"><b>Parachute Descent & Recovery</b> - The rocket gently descends under drag, allowing safe recovery and reuse with a new engine.</li>
+                    </p>
+                    <br>
+    
+                    <h3>Flight Path</h3>
+    
+                    <p class="section-text">
+                        On the graphic, we show the flight path as a large arc through the sky. Ideally, the flight path would be straight up and down; this provides the highest maximum altitude. But model rockets often turn into the wind during powered flight because of an effect called weather cocking. The effect is the result of aerodynamic forces on the rocket and cause the maximum altitude to be slightly less than the optimum.
+                    </p>
+    
+    
+                </div>
+    
+                <figure class="card-banner">
+                    <img src="./assets/images/Model_rocket_flight1.png" width="500" height="500" loading="lazy"
+                        alt="motion" class="w-100" style="border-radius: 20px;">
+                        <br>
+                    <img src="./assets/images/model_rocket_flight2.gif" width="100" height="100" loading="lazy"
+                        alt="motion" class="w-100" style="border-radius: 20px; height: 400px;">
+                        <p>Fig: Forces on the rocket at different phases of flight</p>
+                </figure>
+    
+            </div>
+    
+        </div>
+    </section>
+    
+
+
+      <!-- #MODEL ROCKET ENGINE-->
+
+      <section class="section promo" aria-label="promo" id="engine">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Model Rocket Engine</h2>
+
+          <section class="stats" aria-label="statistics" id="force_on_rocket" style="margin-top: 40px;">
+            <div class="container">
+    
+              <div class="stats-content">
+    
+                <p class="section-text">
+                    Model rockets use solid-fuel engines designed for safe, controlled launches. These engines generate thrust by burning a pre-packaged solid propellant, propelling the rocket upward. Unlike liquid engines, model rocket motors burn completely once ignited and must be replaced after each flight. They come in various sizes to control altitude and flight duration, making them ideal for educational and recreational rocketry.
+                </p>
+    
+                <p class="section-text">
+                    <h3>Types of Rocket Engines</h3>
+                    <br>
+                    <ul><b>1. Liquid Rockets</b> 
+                            <li style="list-style: circle;">Fuel and oxidizer are stored separately and pumped into the combustion chamber.</li>
+                            <li style="list-style: circle;">Burning occurs in the nozzle, generating thrust.</li>
+                            <li style="list-style: circle;">Thrust can be controlled by adjusting the fuel/oxidizer flow.</li>
+                            <li style="list-style: circle;">More complex and heavier due to pumps and storage tanks.</li>
+                    </ul>
+                    <br>
+                    <ul><b>2. Solid Rockets</b> 
+                            <li style="list-style: circle;">Fuel and oxidizer are pre-mixed into a solid propellant.</li>
+                            <li style="list-style: circle;">Burn starts with an igniter and continues until fully exhausted.</li>
+                            <li style="list-style: circle;">Thrust cannot be stopped once ignition begins.</li>
+                            <li style="list-style: circle;">Simpler, easier to store, and can be kept ready for years.</li>
+                    </ul>
+                </p>
+
+              </div>
+    
+              <figure class="stats-banner">
+                <img src="./assets/images/model_rockets_engine1.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+                <p>Fig: Parts of an engine</p>
+                <br>
+                <img src="./assets/images/model_rocket_engine2.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+                <p>Fig: Types of Engines - Liquid Rocket Engine and Solid Rocket Engine</p>
+              </figure>
+    
+            </div>
+          </section>
+
+          <ul class="grid-list" style="margin-top: 30px;">
+
+            <li>
+              <div class="promo-card bg-gray">
+
+                <div class="card-icon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Working of Solid Engine</h3>
+
+                <p class="card-text">
+                   <b>Ignition</b> - An igniter heats the propellant, starting combustion. <br>
+                   <b>Burning Process</b> - A flame front moves through the solid fuel, creating hot exhaust gases for thrust.<br>
+                   <b>Thrust Generation</b> - The rocket is propelled as gases escape through the nozzle.<br>
+                   <b>Stopping Mechanism</b> - Unlike liquid rockets, solid rockets cannot be turned off; the only way to stop them is by destroying the casing.<br>
+                </p>
+                <figure class="card-banner">
+                    <img src="./assets/images/solid_engine_model_rockets.gif" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="promo-card bg-gray">
+
+                <div class="card-icon">
+                    <ion-icon name="airplane-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Parts of a Solid Rocket Engine</h3>
+
+                <p class="card-text">
+                    <b>Engine Casing</b> - A heavy cardboard cylinder that houses the nozzle, propellant, and charges.<br>
+                    <b>Nozzle</b> - Made of clay or ceramics, it accelerates hot gases to produce thrust.<br>
+                    <b>Solid Propellant</b> - The main fuel that burns to generate thrust during powered flight.<br>
+                    <b>Electric Igniter</b> - Triggers combustion, starting the thrust phase.<br>
+                    <b>Electric Igniter</b> - Triggers combustion, starting the thrust phase.<br>
+                    <b>Delay Charge</b> - A blue-colored charge that burns after thrust ends, allowing the rocket to coast to peak altitude.<br>
+                    <b>Ejection Charge</b> - A red-colored charge that ignites after the delay, creating a small explosion to eject the nose cone and deploy the parachute for safe recovery.<br>
+                </p>
+
+                <figure class="card-banner">
+                    <img src="./assets/images/solid_rocket.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+                </figure>
+                
+                
+
+              </div>
+            </li>
+
+          </ul>
+        
+
+        </div>
+      </section>
+
+
+      <!-- #MODEL ROCKET ENGINE PERFORMANCE-->
+
+      <section class="section instruction" aria-label="instruction" id="performance">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Model Rocket Engine Performance</h2>
+        
+          <div class="stability" style="margin-bottom: 30px;">
+            <p class="section-text">
+                Model rocket performance (how far, how high, how fast) depends a great deal on the rocket engine performance. There are several different ways to characterize rocket engine performance. Model rocket engines come in a variety of sizes and weights, with different amounts of propellant, with different burn patterns, which effects the thrust profile and with different values of the delay charge, which sets the amount of time for the coasting phase of the flight. On this page, we discuss the factors that affect model rocket engine performance.
+            </p>
+
+            <img src="./assets/images/Rocket_perfomance.png" alt="Rocket Stability Diagram" class="stability-image" style="border-radius: 20px;">
+        </div>
+        
+        
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="instruction-card bg-gray">
+                <h3 class="h3 card-title">Performance Curves (Describing the Animation)</h3>
+                <br>
+                <p class="card-text">
+                    In the animation, we show the shape and location of the flame front for a C6-4 engine. Engine designations are explained on another page. The schematic is two dimensional while the real engine is three dimensional. So, a three-dimensional cone surface appears as a two-dimensional angle on the schematic. The flame front is shown as a red line that moves through the propellant as the engine burns. The hot exhaust is shown in yellow. The time is noted on the plot by a moving red line.
+                </p>
+                <br>
+                <p class="card-text">
+                    At ignition (t = 0), a small cone forms in the propellant near the nozzle. As it burns, the cone expands, causing a rapid thrust increase until t = 0.2. From t = 0.2 to 0.5, the cone flattens, reducing thrust. By t = 0.5, a flat flame front forms, keeping thrust constant until t = 2, when the propellant burns out and thrust drops to zero. The delay charge then ignites.
+                </p>
+                <br>
+                <p class="card-text">
+                    Even though the amount of the delay charge is smaller than the propellant, it burns longer because it is made of a different material. For this engine we show a 4 second delay. At time = 6 the ejection charge is reached and ignited and blows out the front of the engine.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card bg-gray">
+                <h3 class="h3 card-title">Schematic representation</h3>
+                <br>
+                <figure class="card-banner">
+                    <img src="./assets/images/Performance.gif" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+                </figure>
+                <p>Fig: Animation of the Engine Performance</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/ROCKETRY-Photoroom.svg" width="200" height="31" alt="Rocketry">
+          </a>
+
+          <p class="footer-text">
+            Simplifying rocketry, igniting curiosity, and making space science exciting.
+          </p>
+
+        </div>
+
+        <br>
+        <br>
+        <h3>Navigate through Rocketry</h3>
+        <ul class="footer-list">
+
+          <li>
+            <a href="./Rocket Motion.html" class="footer-link">Rocket Fundamentals</a>
+          </li>
+
+          <li>
+            <a href="./Bottle_rockets.html" class="footer-link">Bottle Rockets</a>
+          </li>
+
+          <li>
+            <a href="./Compressed_air_rockets.html" class="footer-link">Compressed Air Rockets</a>
+          </li>
+
+          <li>
+            <a href="./Full_scale_rockets.html" class="footer-link">Full Scale Rockets</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Developed by Club ANTERiX
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon-link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</body>
+
+</html>
+

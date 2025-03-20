@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Bottle Rockets</title>
+  <meta name="title" content="Cryptoza - Trusted & Secure Trading Crypto Wallet">
+  <meta name="description" content="This is a cryptocurrency wallet html template made by codewithsadee.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/anterix_White-removebg-preview.svg" width="185" height="31" alt="Anterix">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/anterix_White-removebg-preview.svg" width="185" height="31" alt="Anterix">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#force_on_rocket" class="navbar-link">About Water Rockets</a>
+          </li>
+
+          <li>
+            <a href="#rocket_motion" class="navbar-link">Flight of Water Rocket</a>
+          </li>
+
+          <li>
+            <a href="#rocket_control" class="navbar-link">Whoosh Rocket</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" aria-label="home">
+        <div class="container">
+
+            <div class="hero-content">
+                <h1 class="h1 hero-title">Bottle Rockets</h1>
+                <p class="hero-text">
+                    Bottle rockets are simple yet effective water-propelled rockets made from plastic bottles. They work by filling the bottle with water and pressurizing it with air. When released, the water is expelled forcefully, generating thrust and propelling the rocket upward. They are commonly used in educational experiments to demonstrate Newton’s Third Law of Motion. 
+                </p>
+
+                <div class="btn-group">
+                    <a href="#" class="hero-play-btn" onclick="heroOpenVideo()">
+                        <div class="hero-icon">
+                            <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
+                        </div>
+                        <span class="hero-span">DIY Bottle Rocket</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-banner">
+                <figure class="hero-banner">
+                    <img src="./assets/images/hero-banner-three.gif" width="600" height="700" alt="hero banner" class="w-100" style="border-radius: 20px;">
+                </figure>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Video Overlay -->
+    <div id="hero-videoOverlay" class="hero-video-overlay">
+        <div class="hero-video-container">
+            <span class="hero-close-btn" onclick="heroCloseVideo()">&times;</span>
+            <iframe 
+                id="hero-videoPlayer" 
+                src="https://www.youtube.com/embed/FkR70EAR3qs?rel=0" 
+                frameborder="0" 
+                allow="encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    
+    
+
+      <!-- 
+        - #FORCES ACTING
+      -->
+
+
+      <section class="stats" aria-label="statistics" id="force_on_rocket" style="margin-top: 40px;">
+        <div class="container">
+
+          <div class="stats-content">
+
+            <h2 class="h2 section-title">About Water Rockets</h2>
+
+            <p class="section-text">
+                Flying model rockets is a relatively safe and inexpensive way for students to learn the basics of forces and the response of a vehicle to external forces. A model rocket is subjected to four forces in flight: weight, thrust, and the aerodynamic forces, lift and drag. There are many different types of model rockets. One of the first and simplest type of rocket that a student encounters is the bottle, or water rocket. The water rocket system consists of two main parts, the launcher and the rocket.
+            </p>
+            <br>
+            <h3 style="color: white;">Generic Launcher</h3>
+            <p class="section-text">
+                The figure shows a generic launcher, though designs vary. It includes a base for support, a hollow launch tube inserted into the rocket, and a feeder line connecting to an air pump. The pump pressurizes the rocket’s body tube to generate thrust.
+            </p>
+            <p class="section-text">
+                We have attached a pressure gage to the feeder line to display the change in pressure in the system. This part of the system is very similar to the simple compressed air rocket.
+            </p>
+            <br>
+            <h3 style="color: white;">Components of the Rocket</h3>
+            <p class="section-text">
+                The rocket is typically a 2-liter soda bottle, partially filled with water as the propellant. Since water is much heavier than air, it generates more thrust. Placed on the launch tube, the bottle becomes a sealed pressure vessel, matching the air pump’s pressure. Fins at the base ensure stability during flight.
+             </p>
+             <br>
+
+            <ul class="stats-list">
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Body Tube</h3>
+
+                  <p class="card-text">
+                    The main structure, usually a 2-liter soda bottle, holds water and compressed air for thrust generation.
+                  </p>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Launch Tube</h3>
+
+                  <p class="card-text">
+                    A hollow tube inserted into the rocket’s base, connected to an air pump for pressurization.
+                  </p>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Fins</h3>
+
+                  <p class="card-text">
+                    Attached to the lower section, these stabilize the rocket in flight, reducing unwanted rotation and drag.
+                  </p>
+
+                </div>
+              </li>
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Nozzle</h3>
+
+                  <p class="card-text">
+                    The narrow opening at the base, allowing pressurized water to eject rapidly, creating upward thrust.
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="stats-banner">
+            <img src="./assets/images/water_rocket.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+            <br>
+            <img src="./assets/images/diagram_water_rockets.jpg" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #ROCKET MOTION
+      -->
+
+      <section class="app" aria-label="app" id="rocket_motion" style="margin-top: 50px;">
+        <div class="container">
+    
+            <div class="app-card bg-gray">
+    
+                <div class="card-content">
+    
+                    <h2 class="h2 section-title">Flight of a Water Rocket</h2>
+                    <p class="section-text">
+                        Water rockets are among the simplest type of rocket that a student encounters. The body of the rocket is an empty, plastic, two-liter soda bottle. Cardboard or balsa fins are attached to the bottom of the bottle for stability, and a fairing and nose cone are added to the top as a payload.
+                    </p>
+    
+                    <h3>Prior to launch</h3>
+    
+                    <p class="section-text">
+                        The rocket is filled with water, usually around 40% of its volume, and placed on a launch tube. Air is pumped in to pressurize it, and thrust is created as water is expelled through the nozzle. Like real rockets, its weight changes during ascent as water exits. 
+                    </p>
+    
+                    <p class="section-text">
+                        As water exits, the air inside expands, reducing pressure and decreasing thrust. Weight and thrust keep changing during powered flight. After all the water is expelled, leftover air pressure adds a small thrust until it equalizes with the outside air. Then, the rocket enters a coasting ascent.
+                    </p>
+    
+                    <h3>Remainder of the Flight</h3>
+    
+                    <p class="section-text">
+                        After thrust ends, the rocket moves like a bullet, but air resistance affects its path. It slows due to weight and drag, reaching a peak altitude. Then, gravity pulls it back down. Some rockets use parachutes or payload detachment for recovery, allowing reuse.
+                    </p>
+
+                </div>
+    
+                <figure class="card-banner">
+                    <img src="./assets/images/flight_bottle_rockets.png" width="500" height="500" loading="lazy"
+                        alt="motion" class="w-100" style="border-radius: 20px;">
+                        <br>
+                    <img src="./assets/images/Water_rocket_launch.gif" width="100" height="100" loading="lazy"
+                        alt="motion" class="w-100" style="border-radius: 20px;">
+                        <h4>Simulation of Bottle Rocket</h4>
+                        <br>
+                    <img src="./assets/images/bottle_rocket_takeoff.gif.gif" width="100" height="100" loading="lazy"
+                        alt="motion" class="w-100" style="border-radius: 20px; height: 250px; width: 250px;">
+                        <h4>Creation of the upward thrust</h4>
+                </figure>
+    
+            </div>
+    
+        </div>
+    </section>
+    
+
+      <!-- ROCKET CONTROL -->
+
+      <section class="section instruction" aria-label="instruction" id="rocket_control">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Whoosh Rocket</h2>
+        
+          <div class="stability" style="margin-bottom: 30px;">
+            <p class="section-text">
+                An interesting variation of the two-liter bottle rocket is the whoosh rocket.This version of the whoosh rocket was developed by Roger Storm of Fairview High School and Mark Skor of North Royalton High School; both high schools are located in suburbs of Cleveland, Ohio.
+            </p>
+
+            <p class="section-text">
+                A Whoosh rocket is a type of bottle rocket that uses a mixture of alcohol and air as fuel. When ignited, the fuel rapidly combusts, producing a jet of hot gases that propels the rocket upward. Unlike water rockets, Whoosh rockets rely on chemical energy rather than pressurized air and water, creating a distinctive "whoosh" sound during launch.
+            </p>
+            <img src="./assets/images/Whoosh_rocket.png" alt="Rocket Stability Diagram" class="stability-image" style="border-radius: 20px;">
+        </div>
+        
+        
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                  <img src="./assets/images/instruction-icon-1.svg" width="20" height="20" loading="lazy" alt="icon">
+                </div>
+                <h3 class="h3 card-title">Experimentation</h3>
+                <p class="card-text">
+                    A Whoosh rocket uses a two-liter soda bottle but replaces water with a lighter alcohol-air mixture as fuel. The bottle pressurizes during combustion, producing thrust. Since the exhaust is lighter than water, the rocket generates less thrust and follows a more ballistic path. Though it usually flies under 50 feet, it helps students understand how liquid fuel combustion creates thrust.
+                </p>
+                <br>
+                    <a href="./assets/images/whoosh_rocket_demonstration.gif" class="btn-link">
+                        <span class="span">View Demonstration</span>
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        
+                      </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                  <img src="./assets/images/instruction-icon-2.svg" width="20" height="20" loading="lazy" alt="icon">
+                </div>
+                <h3 class="h3 card-title">Launch</h3>
+                <p class="card-text">
+                    A Whoosh rocket is launched using a model rocket pad with a straw guiding it along the rail. A small hole in the bottle cap acts as a nozzle. A few drops of rubbing alcohol are added and shaken to mix with air. The rocket is placed on the rail, and an igniter near the nozzle ignites the fuel, creating a quick burst of thrust. As the hot gases expand, the rocket lifts off, following a short ballistic flight before falling back to the ground.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+                <div class="instruction-card bg-gray">
+  
+                  <div class="card-icon">
+                    <img src="./assets/images/instruction-icon-1.svg" width="20" height="20" loading="lazy" alt="icon">
+                  </div>
+                  <h3 class="h3 card-title">Reaction Process</h3>
+                  <p class="card-text">
+                    Inside the bottle a chemical reaction occurs which converts the alcohol and the oxygen into carbon dioxide, water, and heat as described by this chemical equation:
+                    
+                  </p>
+                  <br>
+                  <p class="card-text">
+                    \[
+                    2C_3H_7OH + 9O_2 \rightarrow 6CO_2 + 8H_2O + \text{heat}
+                    \]    
+                  </p>
+
+                  <br>
+                  <p class="card-text">
+                    The reaction happens quickly, heating the exhaust gases and increasing pressure in the bottle. Gas exits through the cap hole, creating thrust per Newton’s third law. If thrust exceeds the bottle’s weight, the rocket accelerates up the rail (Newton’s first law). The powered flight is brief, with most of the flight influenced by weight and drag.
+                  </p>
+  
+                </div>
+            </li>
+
+            <li>
+                <div class="instruction-card bg-gray">
+  
+                  <div class="card-icon">
+                    <img src="./assets/images/instruction-icon-2.svg" width="20" height="20" loading="lazy" alt="icon">
+                  </div>
+                  <h3 class="h3 card-title">CAUTION</h3>
+                  <p class="card-text">
+                        Exercise extreme caution when flying a whoosh rocket.
+                        <br>
+                        <ul>
+                            <li>1. Always have teacher supervision and use only soda bottles, as water bottles may explode under pressure.</li>
+                            <li>2. Drill a 3/8-inch nozzle in the cap—smaller holes can cause dangerous pressure buildup.</li>
+                            <li>3. Use only rubbing alcohol as fuel; other fuels may lead to explosions.</li>
+                            <li>4. Keep a fire extinguisher nearby, wear safety glasses, and fire the rocket only outdoors in a safe area. </li>
+                            <li>5. The rocket may be hot upon landing, so handle it carefully.</li>
+                        </ul>
+                  </p>
+  
+                </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/ROCKETRY-Photoroom.svg" width="200" height="31" alt="Rocketry">
+          </a>
+
+          <p class="footer-text">
+            Simplifying rocketry, igniting curiosity, and making space science exciting.
+          </p>
+
+        </div>
+
+        <br>
+        <br>
+        <h3>Navigate through Rocketry</h3>
+        <ul class="footer-list">
+
+          <li>
+            <a href="./Rocket Motion.html" class="footer-link">Rocket Fundamentals</a>
+          </li>
+
+          <li>
+            <a href="./Compressed_air_rockets.html" class="footer-link">Compressed Air Rockets</a>
+          </li>
+
+          <li>
+            <a href="./Model_rocket.html" class="footer-link">Model Rockets</a>
+          </li>
+
+          <li>
+            <a href="./Full_scale_rockets.html" class="footer-link">Full Scale Rockets</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Developed by Club ANTERiX
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon-link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</body>
+
+</html>
+

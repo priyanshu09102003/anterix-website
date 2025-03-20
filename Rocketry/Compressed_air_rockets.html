@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Compressed Air Rockets</title>
+  <meta name="title" content="Cryptoza - Trusted & Secure Trading Crypto Wallet">
+  <meta name="description" content="This is a cryptocurrency wallet html template made by codewithsadee.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/anterix_White-removebg-preview.svg" width="185" height="31" alt="Anterix">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/anterix_White-removebg-preview.svg" width="185" height="31" alt="Anterix">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#force_on_rocket" class="navbar-link">Flight of Air Rockets</a>
+          </li>
+
+          <li>
+            <a href="#rocket_motion" class="navbar-link">Air Rocket Launch</a>
+          </li>
+
+          <li>
+            <a href="#rocket_rotations" class="navbar-link">Terminal Velocity</a>
+          </li>
+
+          <li>
+            <a href="#rocket_control" class="navbar-link">Ballistic Flight Calculator</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" aria-label="home">
+        <div class="container">
+
+            <div class="hero-content">
+                <h1 class="h1 hero-title">Compressed Air Rockets</h1>
+                <p class="hero-text">
+                    A compressed air rocket is a simple yet exciting type of rocket that uses pressurized air as its propulsion system. Unlike traditional rockets that rely on combustion, these rockets are launched by rapidly releasing stored air, creating a burst of force that propels them into the sky. They are often used for educational purposes, demonstrating basic principles of aerodynamics, pressure, and Newton’s third law of motion.
+                </p>
+
+                <div class="btn-group">
+                    <a href="#" class="hero-play-btn" onclick="heroOpenVideo()">
+                        <div class="hero-icon">
+                            <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
+                        </div>
+                        <span class="hero-span">Compressed Air Rocket Launcher</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-banner">
+                <figure class="hero-banner">
+                    <img src="./assets/images/hero-banner-two.gif" width="600" height="700" alt="hero banner" class="w-100" style="border-radius: 20px;">
+                </figure>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Video Overlay -->
+    <div id="hero-videoOverlay" class="hero-video-overlay">
+       <div class="hero-video-container">
+    <span class="hero-close-btn" onclick="heroCloseVideo()">&times;</span>
+    <iframe 
+        id="hero-videoPlayer" 
+        src="https://www.youtube.com/embed/CiFIwP4OHJg" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+    </div>
+
+      <!-- 
+        - #FORCES ACTING
+      -->
+
+
+      <section class="stats" aria-label="statistics" id="force_on_rocket" style="margin-top: 40px;">
+        <div class="container">
+
+          <div class="stats-content">
+
+            <h2 class="h2 section-title">Flight of an Air Rocket</h2>
+
+            <p class="section-text">
+                Flying model rockets is a relatively safe and inexpensive way for students to learn the basics of forces and the response of a vehicle to external forces. In flight a model rocket is subjected to four forces; weight, thrust, and the aerodynamic forces, lift and drag. The relative magnitude and direction of the forces determines the flight trajectory of the rocket.
+            </p>
+            <br>
+            <h3 style="color: white;">Prior to Launch</h3>
+            <p class="section-text">
+                A launch tube and air pump pressurize the rocket, creating thrust that lifts it off the pad as it leaves the tube.
+            </p>
+            <p class="section-text">
+                An air rocket has no engine, so its weight stays constant, unlike full-scale rockets. It relies on aerodynamics and launch tube stability.
+            </p>
+            <br>
+            <h3 style="color: white;">Leaving the Pad</h3>
+            <p class="section-text">
+                An air rocket coasts upward like a bullet but slows due to drag. It reaches maximum altitude, then falls back under gravity, usually without a parachute, ready for another launch.
+             </p>
+             <br>
+             <h3 style="color: white;">On the Graphic</h3>
+            <p class="section-text">
+                We show the flight path as a large arc through the sky. Ideally, the flight path would be straight up and down; this provides the largest maximum altitude. But air rockets often turn into the wind during flight because of an effect called weathercocking. The effect is the result of aerodynamic forces on the rocket and cause the maximum altitude to be slightly less than the optimum. The parabolic arc trajectory also occurs if the launch platform is tilted, and the rocket is launched at an angle from the vertical.
+             </p>
+
+            <ul class="stats-list">
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Pressurize</h3>
+
+                  <p class="card-text">
+                    Air pump fills the rocket with pressure.
+                  </p>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Launch</h3>
+
+                  <p class="card-text">
+                    Pressurized air pushes the rocket upward.
+                  </p>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Coast</h3>
+
+                  <p class="card-text">
+                    Rocket ascends, slows due to drag.
+                  </p>
+
+                </div>
+              </li>
+              <li>
+                <div class="stats-card bg-gray">
+
+                  <h3 class="h3 card-title">Descend</h3>
+
+                  <p class="card-text">
+                    Gravity pulls rocket back to the ground.
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="stats-banner">
+            <img src="./assets/images/Compressed_air_rockets_flight.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+            <br>
+            <img src="./assets/images/model-rocket-flight-phases.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #ROCKET MOTION
+      -->
+
+      <section class="app" aria-label="app" id="rocket_motion" style="margin-top: 50px;">
+        <div class="container">
+    
+            <div class="app-card bg-gray">
+    
+                <div class="card-content">
+    
+                    <h2 class="h2 section-title">Air Rocket Launch</h2>
+    
+                    <h3>Stomp Rocket</h3>
+    
+                    <p class="section-text">
+                        The first and simplest type of rocket that a student encounters is the compressed air, or stomp rocket. The air rocket system consists of two main parts, the launcher and the rocket.
+                    </p>
+    
+                    <h3>Launcher</h3>
+    
+                    <p class="section-text">
+                        The launcher has a base to support the rocket during launch. A hollow launch tube is mounted perpendicular to the base and is inserted into the base of the rocket before launch. The launch tube is connected to an air pump by a hollow feeder line. The pump is used to pressurize the inside of the body tube to provide thrust for the rocket. We have attached a pressure gage to the feeder line to display the change in pressure in the system. For many air rockets, the pump is simply a cylinder which can be collapsed by striking with your hand or foot, which is where the “stomp” rocket got its name. 
+                    </p>
+    
+                    <h3>Rocket</h3>
+    
+                    <p class="section-text">
+                        The other part of the compressed air rocket system is the rocket itself. The rocket has a hollow body tube which is opened on one end and closed at the other end by the nose cone.Fins are attached to the bottom of the body tube to provide stability during the flight.
+                    </p>
+    
+    
+                   
+    
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary" id="playVideo">
+                            <ion-icon name="play-circle" aria-hidden="true"></ion-icon>
+                            <div>
+                                <p class="btn-text">Demo Launching</p>
+                                <p class="btn-title">Compressed Air Rocket</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="video-overlay " id="videoOverlay">
+                        <div class="video-container">
+                            <button class="closebtnvideo" id="closeBtn">&times;</button>
+                            <video id="videoPlayer" controls muted>
+                                <source src="./assets/images/Compressed_air_rocket_video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <figure class="card-banner">
+                    <img src="./assets/images/Parts_CAR.png" width="500" height="500" loading="lazy"
+                        alt="motion" class="w-100" style="border-radius: 20px;">
+                        <br>
+                    <img src="./assets/images/c_air_rocket_launch.gif" width="100" height="100" loading="lazy"
+                        alt="motion" class="w-100" style="border-radius: 20px;">
+                </figure>
+    
+            </div>
+    
+        </div>
+    </section>
+    
+
+
+      <!-- ROCKET ROTATIONS -->
+
+      <section class="section promo" aria-label="promo" id="rocket_rotations">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Terminal Velocity</h2>
+
+          <section class="stats" aria-label="statistics" id="force_on_rocket" style="margin-top: 40px;">
+            <div class="container">
+    
+              <div class="stats-content">
+    
+                <p class="section-text">
+                    An object with larger area or higher drag reaches lower terminal velocity. Identical objects with different weights fall differently due to air resistance, unlike in a vacuum where all objects fall equally.
+                </p>
+
+                <h3>External Forces</h3>
+    
+                <p class="section-text">
+                    A falling object experiences gravity and air resistance. Newton’s second law states that force equals mass times acceleration, determining the object's motion when mass remains constant.
+                </p>
+
+                <h3>Drag</h3>
+    
+                <p class="section-text">
+                    Drag increases with the square of the speed. So as an object falls, we quickly reach conditions where the drag becomes equal to the weight, if the weight is small. When drag is equal to weight, there is no net external force on the object and the vertical acceleration goes to zero. With no acceleration, the object falls at a constant velocity as described by Newton’s first law of motion. The constant vertical velocity is called the terminal velocity.
+                </p>
+    
+              </div>
+    
+              <figure class="stats-banner">
+                <img src="./assets/images/CAR_equations.png" width="797" height="454" alt="map" class="w-100" style="border-radius: 20px;">
+              </figure>
+    
+            </div>
+          </section>
+
+          <ul class="grid-list" style="margin-top: 30px;">
+
+            <li>
+              <div class="promo-card bg-gray">
+
+                <div class="card-icon">
+                    <ion-icon name="code-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Net External Force</h3>
+
+                <p class="card-text">
+                    <b><i>F = W−D</i></b>, where <b>'W'</b> is Weight and <b>'D'</b> is Drag
+                </p>
+
+                <h3 class="h3 card-title">Drag</h3>
+
+                <p class="card-text">
+                    <math>
+                        <mstyle mathvariant="bold">
+                          <mi>D</mi>
+                          <mo>=</mo>
+                          <mi>C</mi><mi>d</mi>
+                          <mo>·</mo>
+                          <mi>ρ</mi>
+                          <msup>
+                            <mi>V</mi>
+                            <mn>2</mn>
+                          </msup>
+                          <mo>·</mo>
+                          <mfrac>
+                            <mi>A</mi>
+                            <mn>2</mn>
+                          </mfrac>
+                        </mstyle>
+                      </math>
+                      , where <b>'Cd'</b> is Drag Coefficient and <b>'ρ'</b> is Gas Density
+                </p>
+
+                <a href="./assets/images/Drag_external Force.gif" class="btn-link">
+                  <span class="span">View</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="promo-card bg-gray">
+
+                <div class="card-icon">
+                    <ion-icon name="airplane-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Terminal Velocity</h3>
+
+                <p class="card-text">
+                    The terminal velocity equation tells us that an object with a large cross-sectional area or a high drag coefficient falls slower than an object with a small area or low drag coefficient.
+                </p>
+                
+                <p class="card-text">
+                    <math>
+                        <mstyle mathvariant="bold">
+                          <mi>V</mi>
+                          <mo>=</mo>
+                          <msqrt>
+                            <mfrac>
+                              <mrow>
+                                <mn>2</mn>
+                                <mi>W</mi>
+                              </mrow>
+                              <mrow>
+                                <mi>C</mi><mi>d</mi>
+                                <mo>·</mo>
+                                <mi>ρ</mi>
+                                <mo>·</mo>
+                                <mi>A</mi>
+                              </mrow>
+                            </mfrac>
+                          </msqrt>
+                        </mstyle>
+                      </math>
+                      
+                </p>
+
+                <a href="./assets/images/terminal velocity.gif" class="btn-link">
+                  <span class="span">View</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="gif-overlay" id="gifOverlay">
+            <div class="gif-container">
+                <button class="closeGifBtn" id="closeGifBtn">&times;</button>
+                <img id="gifImage" src="" alt="GIF Preview">
+            </div>
+        </div>
+        
+
+        </div>
+      </section>
+
+
+      <!-- ROCKET CONTROL -->
+
+      <section class="section instruction" aria-label="instruction" id="rocket_control">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Ballistic Flight Calculator</h2>
+        
+          <div class="stability" style="margin-bottom: 30px;">
+            <p class="section-text">
+                The study of model rockets, the flight of a baseball, or the “bend” of a soccer kick are excellent ways for students to learn the basics of forces and the response of an object to external forces. A ball in flight has no engine to produce continuous thrust and the resulting flight is similar to the flight of shell from a cannon, or a bullet from a gun. This type of flight is called ballistic flight.
+            </p>
+
+            <p class="section-text">
+                Ballistic flight only occurs under the ideal conditions that weight is the only force acting on the object. There is no thrust and no aerodynamic drag acting on an object in ballistic flight. Such flight conditions would occur on the Moon, where there is no atmosphere to produce drag.
+            </p>
+            <img src="./assets/images/Ballistic.ppm" alt="Rocket Stability Diagram" class="stability-image" style="border-radius: 20px;">
+        </div>
+        
+        
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                  <img src="./assets/images/instruction-icon-1.svg" width="20" height="20" loading="lazy" alt="icon">
+                </div>
+                <h3 class="h3 card-title">Aerodynamic Drag</h3>
+                <p class="card-text">
+                    On Earth, a baseball or soccer ball experiences aerodynamic drag, making its flight non-ballistic. Drag varies with velocity and air density, which change during flight due to weather and altitude. Exact flight equations are complex since drag depends on velocity squared and fluctuates throughout motion.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card bg-gray">
+
+                <div class="card-icon">
+                  <img src="./assets/images/instruction-icon-2.svg" width="20" height="20" loading="lazy" alt="icon">
+                </div>
+                <h3 class="h3 card-title">Vertical and Horizontal Angle</h3>
+                <p class="card-text">
+                   For ballistic flight, the ball is normally inclined at some angle to the vertical (or horizontal) as it is launched. We resolve the initial velocity into a vertical component V0 and a horizontal component U0. 
+                   <p>\( \mathbf{U} = \mathbf{U}_0 \)</p>
+                   <p>\( \mathbf{x} = \mathbf{U}_0 t \)</p>
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+                <div class="instruction-card bg-gray">
+  
+                  <div class="card-icon">
+                    <img src="./assets/images/instruction-icon-1.svg" width="20" height="20" loading="lazy" alt="icon">
+                  </div>
+                  <h3 class="h3 card-title">Vertical and Horizontal Angle(Contd.)</h3>
+                  <p class="card-text">
+                    In the vertical plane, weight is the only external force acting on the object. Because the weight of the object is a constant, we can use the simple form of Newton’s second law to solve for the vertical motion:
+                    <p>\( -\mathbf{W} = \mathbf{F} = \mathbf{m} \mathbf{a} = \mathbf{m} \frac{d\mathbf{V}}{dt} \)</p>
+                    where <b>W</b> is the weight, <b>m</b> is the mass, <b>V</b> is the vertical velocity, <b>t</b> is the time, <b>a</b> is the acceleration, and <b>F</b> is the net external force.
+                  </p>
+                  <br>
+                  <p class="card-text">
+                    Solving the equation:
+                    \[
+                    \frac{\mathbf{dV}}{\mathbf{dt}} = \frac{-\mathbf{W}}{\mathbf{m}} = -\mathbf{g}
+                    \]
+                    
+                    \[
+                    \mathbf{V} = \mathbf{V_0} - \mathbf{g} \mathbf{t}
+                    \]
+                    
+                  </p>
+
+                  <br>
+                  <h3 class="h3 card-title">Location at any time </h3>
+                  <p class="card-text">
+                    Location at any time is found by integrating the previous equation:
+                    \[
+                    \mathbf{\frac{dy}{dt} = V = V_0 - gt}
+                    \]
+
+                    \[
+                    \mathbf{y = V_0 t - \frac{1}{2} g t^2}
+                    \]
+                  </p>
+  
+                </div>
+            </li>
+
+            <li>
+                <div class="instruction-card bg-gray">
+  
+                  <div class="card-icon">
+                    <img src="./assets/images/instruction-icon-2.svg" width="20" height="20" loading="lazy" alt="icon">
+                  </div>
+                  <h3 class="h3 card-title">At Maximum Height </h3>
+                  <p class="card-text">
+                    At the highest point in the flight, the vertical velocity is zero. From the velocity equation we can determine the time at which this happens:
+                    \[
+                    \mathbf{V = 0}
+                    \]
+
+                    \[
+                    \mathbf{t = \frac{V_0}{g}}
+                    \]
+
+                  </p>
+                  <p class="card-text">
+                    The time to maximum altitude varies linearly with the launch velocity. Plugging this time into the altitude equation we obtain:
+                    \[
+                    \mathbf{y = V_0 \frac{V_0}{g} - \frac{1}{2} g \left(\frac{V_0}{g} \right)^2}
+                    \]
+
+                    \[
+                    \mathbf{y = \frac{1}{2} \frac{V_0^2}{g}}
+                    \]
+                  </p>
+                  <p class="card-text">
+                    The maximum altitude changes as the square of the launch velocity. Doubling the launch velocity produces four times the maximum altitude.
+                  </p>
+  
+                </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/ROCKETRY-Photoroom.svg" width="200" height="31" alt="Rocketry">
+          </a>
+
+          <p class="footer-text">
+            Simplifying rocketry, igniting curiosity, and making space science exciting.
+          </p>
+
+        </div>
+
+        <br>
+        <br>
+        <h3>Navigate through Rocketry</h3>
+        <ul class="footer-list">
+
+          <li>
+            <a href="./Rocket Motion.html" class="footer-link">Rocket Fundamentals</a>
+          </li>
+
+          <li>
+            <a href="./Bottle_rockets.html" class="footer-link">Bottle Rockets</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Model Rockets</a>
+          </li>
+
+          <li>
+            <a href="./Full_scale_rockets.html" class="footer-link">Full Scale Rockets</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Developed by Club ANTERiX
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon-link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</body>
+
+</html>

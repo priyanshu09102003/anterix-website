@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Asteroid Extravaganza</title>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FONTAWESOME CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/AnteriX_red-removebg-preview (1).png" width="209" height="52" alt="ANTERIX logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <p class="navbar-title"><img src="./assets/images/AnteriX_red-removebg-preview (1).png" width="209" height="52" alt="ANTERIX logo"></p>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-nav-link>About the Event</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#photo-gallery" class="navbar-link" data-nav-link>Promotional Posters</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anterixclub@vitbhopal.ac.in" target="_blank"  class="btn btn-primary">Reach Us</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="h1 section-title">
+                    ASTEROID EXTRAVAGANZA
+                </h1>
+                <p class="section-text">
+                    Immerse yourself in a two-session extravaganza: dive into celestial exploration with our captivating Astronomy with Python workshop, followed by a cosmic cinematic experience during our breathtaking documentary screening. 
+                </p>
+            </div>
+
+            <figure class="hero-banner has-shape">
+                <img src="./assets/images/AE.png" width="600" height="675" alt="hero banner" class="w-100" style="border-radius: 20px;">
+            </figure>
+        </div>
+    </section>
+
+  
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section service has-shape" id="services" aria-label="service">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">
+              About the <span class="span">Event</span>
+            </h2>
+
+            <p class="section-text" style="font-size: large;">
+                Join Club Anterix on International Asteroid Day, 30th June 2023, for an out-of-this-world event!
+                Immerse yourself in a two-session extravaganza: dive into celestial exploration with our captivating Astronomy with Python workshop, followed by a cosmic cinematic experience during our breathtaking documentary screening.
+                <br>
+                <br>
+                Expand your knowledge and ignite your passion for the universe. Don't miss this stellar opportunity! 
+            </p>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/calendar-symbol-svgrepo-com.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="" class="card-title">Event Date</a>
+                </h3>
+
+                <p class="card-text">
+                   30 <sup>th</sup> June , 2023
+                   <br>
+                   International Asteroid Day
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/clock-two-svgrepo-com.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="" class="card-title">Event Schedule</a>
+                </h3>
+
+                <p class="card-text">
+                  <b>10:00am - 01:00pm (Session - 1):</b> Python-Powered Astronomy
+                  <br>
+                  <b>2:00pm - 4:00pm (Session - 2):</b> Cosmic Documentary
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/goal-svgrepo-com.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="" class="card-title">Event Goal</a>
+                </h3>
+
+                <p class="card-text">
+                    <b>Learn</b> the use of Python in space and astronomy<br>
+                    <b>Expand knowledge</b> with documentary screening.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/location-pin-svgrepo-com.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="" class="card-title">Event Location</a>
+                </h3>
+
+                <p class="card-text">
+                    <b>Academic Block 1</b> and <b>Auditorium 1</b>
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/circle-shape.svg" width="158" height="158" loading="lazy" alt=""
+            class="shape shape-1">
+
+          <img src="./assets/images/triangle-shape-1.svg" width="158" height="158" loading="lazy" alt=""
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PHOTO GALLERY
+      -->
+
+      <section class="section project" aria-label="project" id="photo-gallery">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <h2 class="h2 section-title">
+                PROMOTIONAL <span class="span">POSTERS</span>
+              </h2>
+
+              <p class="section-text">
+                Take a visual journey through the highlights and schedules of the event through promotional posters and flyers that shaped the day. 
+              </p>
+            </div>
+
+          </div>
+
+          <ul class="project-list">
+            <li>
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="./assets/images/AE.png" width="615" height="391" loading="lazy"
+                    alt="Official Poster" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">ANTERiX Presents</a>
+                    </h3>
+                    <p class="card-tag">ASTEROID EXTRAVAGANZA</p>
+                  </div>
+                  <a href="#" class="card-link view-picture" aria-label="View Full Image">
+                    <ion-icon name="expand-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </li>
+          
+            <li>
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="./assets/images/Asteroid Extravaganza/one.png" width="615" height="391" loading="lazy"
+                    alt="Promotional Flyer" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">Promotional Poster</a>
+                    </h3>
+                    <p class="card-tag">ASTEROID EXTRAVAGANZA</p>
+                  </div>
+                  <a href="#" class="card-link view-picture" aria-label="View Full Image">
+                    <ion-icon name="expand-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+                <div class="project-card">
+                  <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                    <img src="./assets/images/Asteroid Extravaganza/two.png" width="615" height="391" loading="lazy"
+                      alt="Promotional Flyer" class="img-cover">
+                  </figure>
+                  <div class="card-content">
+                    <div>
+                      <h3 class="h3">
+                        <a href="#" class="card-title hover:underline">Session 1</a>
+                      </h3>
+                      <p class="card-tag">ASTEROID EXTRAVAGANZA</p>
+                    </div>
+                    <a href="#" class="card-link view-picture" aria-label="View Full Image">
+                      <ion-icon name="expand-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="project-card">
+                  <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                    <img src="./assets/images/Asteroid Extravaganza/three.png" width="615" height="391" loading="lazy"
+                      alt="Promotional Flyer" class="img-cover">
+                  </figure>
+                  <div class="card-content">
+                    <div>
+                      <h3 class="h3">
+                        <a href="#" class="card-title hover:underline">Session 2</a>
+                      </h3>
+                      <p class="card-tag">ASTEROID EXTRAVAGANZA</p>
+                    </div>
+                    <a href="#" class="card-link view-picture" aria-label="View Full Image">
+                      <ion-icon name="expand-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+            </li>
+          
+            
+
+          </ul>
+          
+          <div id="pictureModal" class="modal-picture">
+            <span class="close-btn" id="closePictureModal">&times;</span>
+            <img id="modalPicture" class="modal-content">
+          </div>
+          
+          
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - OTHER EVENTS BY ANTERIX
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">
+              Other Events by <span class="span">ANTERiX</span>
+            </h2>
+
+          </div>
+
+          <ul class="grid-list">
+            <li>
+                <div class="blog-card">
+  
+                  <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                    <img src="./assets/images/Astrea (2).png" width="595" height="391" loading="lazy"
+                      alt="Astrea" class="img-cover">
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <ul class="meta-list">
+  
+                      <li class="meta-item">
+                        <img src="./assets/images/favicon.ico" width="18" height="18" loading="lazy" alt="Alice Williams"
+                          class="anterix">
+  
+                        <p class="meta-item-text">ANTERiX</p>
+                      </li>
+  
+                      <li class="meta-item">
+                        <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+  
+                        <time datetime="2022-12-20" class="meta-item-text">February 8, 2023</time>
+                      </li>
+  
+                    </ul>
+  
+                    <h3 class="h3">
+                      <a href="./astrea.html" class="card-title hover:underline">
+                        Astrea
+                      </a>
+                    </h3>
+  
+                    <a href="./astrea.html" class="btn-link">
+                      <span class="span">View</span>
+  
+                      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+  
+                  </div>
+  
+                </div>
+            </li>
+
+            <li>
+                <div class="blog-card">
+  
+                  <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                    <img src="./assets/images/AMRC.png" width="595" height="391" loading="lazy"
+                      alt="AMRC" class="img-cover">
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <ul class="meta-list">
+  
+                      <li class="meta-item">
+                        <img src="./assets/images/favicon.ico" width="18" height="18" loading="lazy" alt="Alice Williams"
+                          class="anterix">
+  
+                        <p class="meta-item-text">ANTERiX</p>
+                      </li>
+  
+                      <li class="meta-item">
+                        <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+  
+                        <time datetime="2022-12-20" class="meta-item-text">April 22, 2022</time>
+                      </li>
+  
+                    </ul>
+  
+                    <h3 class="h3">
+                      <a href="./amrc.html" class="card-title hover:underline">
+                        AMRC'22
+                      </a>
+                    </h3>
+  
+                    <a href="./amrc.html" class="btn-link">
+                      <span class="span">View</span>
+  
+                      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+  
+                  </div>
+  
+                </div>
+            </li> 
+
+            <li>
+                <div class="blog-card">
+  
+                  <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                    <img src="./assets/images/BASIX (3).png" width="595" height="391" loading="lazy"
+                      alt="AMRC" class="img-cover">
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <ul class="meta-list">
+  
+                      <li class="meta-item">
+                        <img src="./assets/images/favicon.ico" width="18" height="18" loading="lazy" alt="Alice Williams"
+                          class="anterix">
+  
+                        <p class="meta-item-text">ANTERiX</p>
+                      </li>
+  
+                      <li class="meta-item">
+                        <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+  
+                        <time datetime="2022-12-20" class="meta-item-text">October 9 and 10, 2021</time>
+                      </li>
+  
+                    </ul>
+  
+                    <h3 class="h3">
+                      <a href="./basix.html" class="card-title hover:underline">
+                        BASiX
+                      </a>
+                    </h3>
+  
+                    <a href="./basix.html" class="btn-link">
+                      <span class="span">View</span>
+  
+                      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+  
+                  </div>
+  
+                </div>
+            </li> 
+            
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+
